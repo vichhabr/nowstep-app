@@ -1,0 +1,1324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NowStep — Know Your Next Step. Instantly.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}:root{--white75:rgba(255,255,255,.75);--white90:rgba(255,255,255,.90);--white55:rgba(255,255,255,.55);--wb:rgba(255,255,255,.88);--gs:0 4px 20px rgba(80,80,160,.07),0 1px 4px rgba(80,80,160,.04);--gsh:0 8px 36px rgba(80,80,160,.11),0 2px 8px rgba(80,80,160,.05);--r:14px;--rs:9px;--rp:100px;--t1:#17172a;--t2:#52527a;--t3:#9494b8;--ac:#4f7ef7;--ac2:#7c3aed;--gr:#059669;--cc-career:#e8703a;--cc-money:#059669;--cc-imm:#4f7ef7;--cc-clarity:#7c3aed;--cc-life:#d97706;--cc-general:#64748b;--cc-sports:#0ea5e9;--cc-stocks:#16a34a;--cc-housing:#dc2626;}html{scroll-behavior:smooth;-webkit-tap-highlight-color:transparent}body{font-family:'DM Sans',sans-serif;color:var(--t1);min-height:100vh;overflow-x:hidden;background:#eceaf8}body::before{content:'';position:fixed;inset:0;z-index:0;pointer-events:none;background:radial-gradient(ellipse 80% 60% at -5% -5%,rgba(255,205,155,.70) 0%,transparent 52%), radial-gradient(ellipse 70% 55% at 105% -5%,rgba(155,185,255,.65) 0%,transparent 48%), radial-gradient(ellipse 60% 55% at 105% 105%,rgba(155,255,210,.50) 0%,transparent 48%), radial-gradient(ellipse 65% 45% at -5% 105%,rgba(255,175,220,.46) 0%,transparent 48%), radial-gradient(ellipse 45% 45% at 50% 50%,rgba(210,200,255,.38) 0%,transparent 58%), #e8e4f4;}.z{position:relative;z-index:1}::-webkit-scrollbar{width:4px}::-webkit-scrollbar-track{background:transparent}::-webkit-scrollbar-thumb{background:rgba(80,80,160,.18);border-radius:2px}nav{display:flex;align-items:center;justify-content:space-between;padding:.65rem 1.8rem;background:var(--white90);backdrop-filter:blur(32px);-webkit-backdrop-filter:blur(32px);border-bottom:1px solid rgba(255,255,255,.85);box-shadow:0 1px 18px rgba(80,80,160,.06);position:sticky;top:0;z-index:400;}.logo{display:flex;align-items:center;gap:9px;cursor:pointer}.lm{width:32px;height:32px;border-radius:9px;background:linear-gradient(135deg,var(--ac),var(--ac2));display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;color:#fff;box-shadow:0 3px 10px rgba(79,126,247,.30);letter-spacing:-.5px;flex-shrink:0}.ln{font-family:'Playfair Display',serif;font-weight:700;font-size:1.15rem;color:var(--t1)}.lt{font-size:10px;color:var(--t3);letter-spacing:.3px}.nav-tabs{display:flex;gap:2px}.nt{padding:5px 14px;border-radius:var(--rp);font-size:12px;font-weight:500;cursor:pointer;border:1px solid transparent;background:transparent;color:var(--t2);transition:all .17s;font-family:inherit}.nt:hover{background:rgba(79,126,247,.07);color:var(--t1)}.nt.on{background:rgba(79,126,247,.11);border-color:rgba(79,126,247,.22);color:var(--ac)}.nav-r{display:flex;align-items:center;gap:6px}@keyframes spin{to{transform:rotate(360deg)}}.rbtn{display:flex;align-items:center;gap:5px;padding:5px 12px;border-radius:var(--rp);font-size:12px;font-weight:500;cursor:pointer;border:1px solid rgba(79,126,247,.28);background:rgba(79,126,247,.07);color:var(--ac);font-family:inherit;transition:all .17s}.rbtn:hover{background:rgba(79,126,247,.14)}.ri{display:inline-block}.rbtn.sp .ri{animation:spin .5s linear}.fbbtn{padding:5px 12px;border-radius:var(--rp);font-size:12px;cursor:pointer;border:1px solid rgba(0,0,0,.09);background:transparent;color:var(--t2);font-family:inherit;transition:all .17s}.fbbtn:hover{background:rgba(0,0,0,.04)}.sb-badge{background:rgba(79,126,247,.15);color:var(--ac);font-size:10px;padding:1px 6px;border-radius:var(--rp);margin-left:3px;display:none}.hero{padding:1.4rem 1.8rem 1.3rem;text-align:center;background:var(--white55);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.65);}.hero-q{display:none}h1{font-family:'Playfair Display',serif;font-weight:700;font-size:clamp(1.5rem,3.2vw,2.2rem);line-height:1.12;color:var(--t1);letter-spacing:-.5px;margin-bottom:.3rem}h1 em{font-style:italic;color:var(--ac)}.hero-sub{font-size:.88rem;color:var(--t2);margin-bottom:0;line-height:1.6}.sw{max-width:580px;margin:0 auto;position:relative}.sb{width:100%;padding:13px 46px 13px 44px;border-radius:var(--rp);background:var(--white90);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border:1.5px solid rgba(79,126,247,.18);font-size:14px;font-family:inherit;color:var(--t1);outline:none;box-shadow:var(--gs);transition:all .2s;}.sb:focus{border-color:rgba(79,126,247,.42);box-shadow:var(--gsh)}.sb::placeholder{color:var(--t3)}.si{position:absolute;left:15px;top:50%;transform:translateY(-50%);color:var(--t3);font-size:16px;pointer-events:none}.sc{position:absolute;right:14px;top:50%;transform:translateY(-50%);color:var(--t3);font-size:18px;cursor:pointer;background:none;border:none;line-height:1;display:none}.sc.v{display:block}.arb{max-width:640px;margin:.9rem auto 0;background:var(--white90);backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px);border:1.5px solid rgba(79,126,247,.22);border-radius:var(--r);box-shadow:var(--gsh);overflow:hidden;display:none;text-align:left}.arb.v{display:block}.arb-hd{display:flex;align-items:center;gap:8px;padding:.65rem 1rem;background:rgba(79,126,247,.06);border-bottom:1px solid rgba(79,126,247,.1)}@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(1.3)}}.arb-dot{width:8px;height:8px;border-radius:50%;background:var(--ac);flex-shrink:0}.arb-dot.live{animation:pulse 1.4s ease-in-out infinite}.arb-lbl{font-size:11.5px;font-weight:600;color:var(--ac);letter-spacing:.3px}.arb-body{padding:.85rem 1rem}.arb-dec{font-size:.93rem;font-weight:600;color:var(--t1);line-height:1.5;margin-bottom:.55rem}.arb-steps{display:flex;flex-direction:column;gap:5px;margin-bottom:.55rem}.arb-step{display:flex;align-items:flex-start;gap:7px;font-size:12.5px;color:var(--t2);line-height:1.5}.arb-n{width:16px;height:16px;border-radius:50%;background:rgba(79,126,247,.11);color:var(--ac);font-size:9px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}.arb-why{font-size:12px;color:var(--t3);font-style:italic;padding-top:.5rem;border-top:1px solid rgba(0,0,0,.06)}@keyframes bounce{0%,80%,100%{transform:translateY(0);opacity:.35}40%{transform:translateY(-5px);opacity:1}}.ld{display:flex;align-items:center;gap:10px;padding:.85rem 1rem;font-size:13px;color:var(--t2)}.ld-dots{display:flex;gap:4px}.ld-dots span{width:6px;height:6px;border-radius:50%;background:var(--ac);animation:bounce 1.2s ease-in-out infinite}.ld-dots span:nth-child(2){animation-delay:.2s}.ld-dots span:nth-child(3){animation-delay:.4s}.study-sec{padding:2rem 1.8rem 2.2rem;background:rgba(8,145,178,.035);border-bottom:1px solid rgba(8,145,178,.1);}.study-hd{display:flex;align-items:center;justify-content:space-between;margin-bottom:1.2rem;flex-wrap:wrap;gap:.7rem}.study-hl{display:flex;align-items:center;gap:10px}.study-icon{width:36px;height:36px;border-radius:9px;background:linear-gradient(135deg,rgba(8,145,178,.14),rgba(79,126,247,.14));border:1px solid rgba(8,145,178,.18);display:flex;align-items:center;justify-content:center;font-size:17px;flex-shrink:0}.study-title h2{font-family:'Playfair Display',serif;font-size:1.12rem;font-weight:700;color:var(--t1);line-height:1.2}.study-title p{font-size:11px;color:var(--t3);margin-top:2px}.study-tabs{display:flex;gap:4px;flex-wrap:wrap}.stab{padding:4px 12px;border-radius:var(--rp);font-size:11.5px;font-weight:500;cursor:pointer;border:1px solid rgba(0,0,0,.09);background:var(--white90);color:var(--t2);transition:all .15s;font-family:inherit}.stab:hover{color:var(--t1)}.stab.on{background:rgba(8,145,178,.1);border-color:rgba(8,145,178,.25);color:#0891b2}.sg{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:9px}@keyframes fadeUp{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}.sc-card{background:var(--white75);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border:1px solid rgba(255,255,255,.82);border-radius:var(--r);padding:.9rem 1rem;box-shadow:var(--gs);transition:all .2s;border-left:3px solid #0891b2;animation:fadeUp .25s ease both;}.sc-card:hover{box-shadow:var(--gsh);transform:translateY(-1px)}.sc-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:.5rem}.sc-badge{font-size:10px;font-weight:600;padding:2px 8px;border-radius:var(--rp);background:rgba(8,145,178,.1);color:#0891b2;text-transform:uppercase;letter-spacing:.4px}.sc-demand{display:flex;align-items:center;gap:4px;font-size:10.5px;color:var(--gr);font-weight:500}.sc-dd{width:5px;height:5px;border-radius:50%;background:var(--gr)}.sc-sit{font-size:.87rem;font-weight:500;color:var(--t1);line-height:1.4;margin-bottom:.45rem}.sc-dec{font-size:.8rem;color:var(--t2);line-height:1.5;margin-bottom:.55rem}.sc-s1{display:flex;align-items:flex-start;gap:6px;font-size:.79rem;color:var(--ac);font-weight:500;line-height:1.4}.sc-s1n{font-size:10px;font-weight:700;color:var(--ac);min-width:13px;flex-shrink:0}.sc-expand{font-size:11px;color:var(--t3);cursor:pointer;display:inline-flex;align-items:center;gap:3px;background:none;border:none;font-family:inherit;padding:0;margin-top:.4rem;transition:color .14s}.sc-expand:hover{color:var(--ac)}.sc-more{display:none;margin-top:.65rem;padding-top:.65rem;border-top:1px solid rgba(0,0,0,.06)}.sc-more.open{display:block}.sc-ms{display:flex;align-items:flex-start;gap:6px;font-size:.79rem;color:var(--t2);margin-bottom:4px;line-height:1.4}.sc-why{font-size:.76rem;color:var(--t3);font-style:italic;margin-top:.5rem;line-height:1.5}.chip.study-chip{background:rgba(8,145,178,.07);border-color:rgba(8,145,178,.18);color:#0891b2}.chip.study-chip.on{background:rgba(8,145,178,.14);border-color:rgba(8,145,178,.32);color:#0891b2;font-weight:600}@keyframes fcUp{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}.fc-wrap{padding:0 0 1.5rem}.fc-subbar{display:flex;align-items:center;gap:5px;margin-bottom:.9rem;flex-wrap:wrap}.fc-sub-lbl{font-size:10.5px;font-weight:600;color:var(--t3);letter-spacing:.4px;text-transform:uppercase;margin-right:2px}.fcf{padding:3px 11px;border-radius:var(--rp);font-size:11.5px;cursor:pointer;border:1px solid rgba(0,0,0,.09);background:var(--white90);color:var(--t2);transition:all .14s;font-family:inherit;font-weight:500}.fcf:hover{color:var(--t1)}.fcf.on{background:rgba(8,145,178,.1);border-color:rgba(8,145,178,.28);color:#0891b2}.fc-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:9px}.fc{background:var(--white75);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border:1px solid rgba(255,255,255,.82);border-radius:var(--r);box-shadow:var(--gs);cursor:pointer;transition:all .2s;border-top:3px solid var(--fcc,#0891b2);animation:fcUp .22s ease both;}.fc:hover{box-shadow:var(--gsh);transform:translateY(-1px)}.fc-front{padding:.8rem .95rem}.fc.flipped .fc-front{display:none}.fc.flipped .fc-back{display:none}.fc.flipped .fc-back{display:block}.fc.flipped{background:rgba(8,145,178,.04)}.fc-badge{font-size:10px;font-weight:700;padding:2px 8px;border-radius:var(--rp);background:var(--fcbg,rgba(8,145,178,.1));color:var(--fcc,#0891b2);text-transform:uppercase;letter-spacing:.4px;display:inline-block;margin-bottom:.45rem}.fc-skill{font-size:.87rem;font-weight:600;color:var(--t1);line-height:1.4;margin-bottom:.3rem}.fc-dec{font-size:.78rem;color:var(--t2);line-height:1.45;margin-bottom:.4rem}.fc-hint{font-size:10.5px;color:var(--t3);display:flex;align-items:center;gap:4px}.fc-back{padding:.8rem .95rem;display:none}.fc-demand{display:flex;align-items:center;gap:6px;margin-bottom:.55rem}.fc-dlabel{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;color:var(--gr)}.fc-dots{display:flex;gap:3px}.fc-dots span{width:7px;height:7px;border-radius:2px;background:var(--gr);opacity:.2}.fc-dots span.on{opacity:1}.fc-step1{display:flex;align-items:flex-start;gap:7px;margin-bottom:.45rem}.fc-sn{width:18px;height:18px;border-radius:50%;background:var(--fcc,#0891b2);color:#fff;font-size:9px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}.fc-st{font-size:.81rem;font-weight:600;color:var(--t1);line-height:1.45;flex:1}.fc-more-btn{font-size:11px;color:var(--fcc,#0891b2);background:none;border:none;font-family:inherit;cursor:pointer;padding:0;font-weight:500}.fc-more-steps{display:none;margin-top:.45rem;padding-top:.45rem;border-top:1px solid rgba(0,0,0,.06)}.fc-more-steps.open{display:block}.fc-xs{font-size:.77rem;color:var(--t2);margin-bottom:3px;line-height:1.4;display:flex;gap:6px}.fc-xn{color:var(--fcc,#0891b2);font-weight:700;flex-shrink:0}.fc-why{font-size:.74rem;color:var(--t3);font-style:italic;margin-top:.4rem;line-height:1.45}.fc-flip-back{font-size:10px;color:var(--t3);background:none;border:none;font-family:inherit;cursor:pointer;padding:.35rem 0 0;display:block}.fc-flip-back:hover{color:var(--t2)}.layout{display:grid;grid-template-columns:1fr 252px;gap:0;max-width:1110px;margin:0 auto;padding:0 1.8rem;align-items:start}.main-col{min-width:0;padding:1.2rem 1.5rem 1.2rem 0;border-right:1px solid rgba(0,0,0,.06)}.side-col{padding:1.2rem 0 1.2rem 1.4rem;position:sticky;top:58px;max-height:calc(100vh - 64px);overflow-y:auto}.fb{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:.85rem;align-items:center}.fl{font-size:10.5px;font-weight:600;color:var(--t3);letter-spacing:.4px;text-transform:uppercase;min-width:52px}.chip{padding:4px 12px;border-radius:var(--rp);font-size:11.5px;cursor:pointer;border:1px solid rgba(0,0,0,.09);background:var(--white90);color:var(--t2);transition:all .15s;white-space:nowrap;font-family:inherit;font-weight:500}.chip:hover{background:rgba(79,126,247,.07);color:var(--t1)}.chip.on{background:rgba(79,126,247,.1);border-color:rgba(79,126,247,.25);color:var(--ac)}.feed-t{font-family:'Playfair Display',serif;font-size:.95rem;font-weight:600;color:var(--t1);margin-bottom:.8rem;padding-bottom:.55rem;border-bottom:1px solid rgba(0,0,0,.06)}.dc{background:var(--white75);backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px);border:1px solid rgba(255,255,255,.82);border-radius:var(--r);box-shadow:var(--gs);margin-bottom:8px;overflow:hidden;transition:all .2s;animation:fadeUp .26s ease both;}.dc:hover{box-shadow:var(--gsh);transform:translateY(-1px)}.dc.open{box-shadow:var(--gsh)}.dc-accent{height:3px}.dc-top{display:flex;align-items:center;justify-content:space-between;padding:.6rem 1rem .35rem}.cat-p{font-size:10px;font-weight:600;padding:2px 8px;border-radius:var(--rp);text-transform:uppercase;letter-spacing:.4px}.dc-badges{display:flex;align-items:center;gap:5px}.agr-p{display:flex;align-items:center;gap:3px;font-size:10.5px;font-weight:500;padding:2px 7px;border-radius:var(--rp);background:rgba(5,150,105,.08);color:var(--gr)}.agr-d{width:5px;height:5px;border-radius:50%;background:var(--gr)}.hot-p{font-size:10px;padding:2px 7px;border-radius:var(--rp);background:rgba(232,112,58,.1);color:var(--cc-career);font-weight:600}.svbtn{width:26px;height:26px;border-radius:50%;border:1px solid rgba(0,0,0,.09);background:transparent;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:13px;transition:all .17s;color:var(--t3)}.svbtn:hover{background:rgba(212,160,0,.09);color:#b8860b;border-color:rgba(212,160,0,.25)}.svbtn.saved{background:rgba(212,160,0,.09);border-color:rgba(212,160,0,.25);color:#b8860b}.d-sit{font-size:.89rem;font-weight:500;color:var(--t1);line-height:1.45;padding:.2rem 1rem .6rem}.d-decbox{margin:.2rem .9rem .65rem;padding:.75rem .95rem;border-radius:9px;background:rgba(79,126,247,.05);border:1px solid rgba(79,126,247,.13)}.dd-lbl{font-size:9.5px;font-weight:700;text-transform:uppercase;letter-spacing:.6px;color:var(--ac);margin-bottom:3px}.dd-txt{font-size:.93rem;font-weight:600;color:var(--t1);line-height:1.48;font-family:'Playfair Display',serif}.d-s1{display:flex;align-items:flex-start;gap:8px;padding:.1rem 1rem .55rem;cursor:pointer}.d-s1b{width:15px;height:15px;border-radius:4px;border:1.5px solid rgba(0,0,0,.14);flex-shrink:0;margin-top:2px;background:#fff;display:flex;align-items:center;justify-content:center;transition:all .14s}.d-s1b.dn{background:var(--gr);border-color:var(--gr)}.d-s1b.dn::after{content:'✓';font-size:8.5px;color:#fff;font-weight:700}.d-s1t{font-size:12.5px;color:var(--t2);line-height:1.5;flex:1}.d-s1t.dn{text-decoration:line-through;opacity:.45}.d-why{display:flex;align-items:flex-start;gap:5px;padding:0 1rem .6rem;font-size:11.5px;color:var(--t3);font-style:italic;line-height:1.5}.d-foot{display:flex;align-items:center;justify-content:space-between;padding:.45rem 1rem .55rem;border-top:1px solid rgba(0,0,0,.05);flex-wrap:wrap;gap:5px}.d-xbtn{display:flex;align-items:center;gap:5px;font-size:11.5px;color:var(--t3);cursor:pointer;background:none;border:none;font-family:inherit;transition:color .14s;padding:0}.d-xbtn:hover{color:var(--ac)}.d-chev{transition:transform .22s;font-size:10px}.open .d-chev{transform:rotate(180deg)}.d-gbtn{font-size:11px;padding:4px 11px;border-radius:var(--rp);border:1px solid rgba(79,126,247,.2);background:rgba(79,126,247,.06);color:var(--ac);cursor:pointer;font-family:inherit;transition:all .14s;font-weight:500}.d-gbtn:hover{background:rgba(79,126,247,.12)}.d-exp{display:none;border-top:1px solid rgba(0,0,0,.05);background:rgba(248,248,255,.45)}.dc.open .d-exp{display:block}.d-msteps{padding:.65rem 1rem;display:flex;flex-direction:column;gap:6px}.d-ms{display:flex;align-items:flex-start;gap:8px;cursor:pointer}.d-msb{width:15px;height:15px;border-radius:4px;border:1.5px solid rgba(0,0,0,.13);flex-shrink:0;margin-top:2px;background:#fff;display:flex;align-items:center;justify-content:center;transition:all .13s}.d-msb.dn{background:var(--gr);border-color:var(--gr)}.d-msb.dn::after{content:'✓';font-size:8.5px;color:#fff;font-weight:700}.d-mst{font-size:12.5px;color:var(--t2);line-height:1.5;flex:1}.d-mst.dn{text-decoration:line-through;opacity:.45}.ai-wrap{border-top:1px solid rgba(0,0,0,.05)}.ai-bar{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:5px;padding:6px 10px;background:rgba(79,126,247,.04)}.ai-bl{display:flex;align-items:center;gap:6px}.ai-lbl{font-size:11px;color:var(--t3);font-weight:500}.vbtns{display:flex;gap:3px}.vbtn{padding:3px 8px;border-radius:var(--rp);font-size:11px;cursor:pointer;border:1px solid rgba(0,0,0,.09);background:transparent;color:var(--t2);transition:all .13s;font-family:inherit}.vbtn:hover{color:var(--t1)}.vbtn.on{background:rgba(79,126,247,.09);border-color:rgba(79,126,247,.22);color:var(--ac)}.best-lbl{font-size:11px;padding:2px 8px;border-radius:var(--rp);background:rgba(79,126,247,.08);border:1px solid rgba(79,126,247,.14);color:var(--ac);font-weight:500}.aitabs{display:flex;border-bottom:1px solid rgba(0,0,0,.06);overflow-x:auto}.aitab{padding:6px 12px;font-size:11.5px;cursor:pointer;color:var(--t3);border-bottom:2px solid transparent;white-space:nowrap;transition:all .13s;background:none;border-top:none;border-left:none;border-right:none;font-family:inherit;font-weight:500}.aitab:hover{color:var(--t1)}.aitab.on{color:var(--ac);border-bottom-color:var(--ac)}.aibox{padding:.8rem .95rem}.aians{display:none}.aians.on{display:block}.aians p{font-size:13px;color:var(--t2);line-height:1.8}.aians strong{color:var(--t1);font-weight:600}.cmpgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(175px,1fr));gap:7px;padding:9px}.cmpc{background:var(--white90);border:1px solid rgba(0,0,0,.07);border-radius:9px;padding:9px 11px;box-shadow:0 1px 5px rgba(0,0,0,.04)}.cmpc.star{border-color:rgba(79,126,247,.24);background:rgba(79,126,247,.05)}.cmpc-h{display:flex;align-items:center;gap:5px;margin-bottom:5px}.cmpc-d{width:7px;height:7px;border-radius:50%;flex-shrink:0}.cmpc-n{font-size:11px;font-weight:600;color:var(--t1)}.cmpc-s{font-size:10px;padding:1px 5px;border-radius:var(--rp);background:rgba(79,126,247,.1);color:var(--ac);margin-left:auto}.cmpc-t{font-size:11.5px;color:var(--t2);line-height:1.6}.conbox{margin:0 9px 9px;padding:9px 11px;background:rgba(5,150,105,.07);border:1px solid rgba(5,150,105,.18);border-radius:9px}.con-t{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--gr);margin-bottom:3px}.con-tx{font-size:12px;color:var(--t2);line-height:1.7}.act-row{display:flex;gap:5px;padding:0 9px 9px;flex-wrap:wrap}.acbtn{padding:4px 10px;border-radius:var(--rp);font-size:11px;cursor:pointer;border:1px solid rgba(0,0,0,.09);background:transparent;color:var(--t2);transition:all .13s;font-family:inherit}.acbtn:hover{border-color:rgba(79,126,247,.24);color:var(--ac);background:rgba(79,126,247,.06)}.empty-st{text-align:center;padding:2.5rem;color:var(--t3)}.es-btn{margin-top:.8rem;padding:7px 18px;border-radius:var(--rp);background:rgba(79,126,247,.09);border:1px solid rgba(79,126,247,.2);color:var(--ac);cursor:pointer;font-family:inherit;font-size:12.5px;font-weight:500}.pager{display:flex;align-items:center;justify-content:center;gap:5px;padding:1.1rem 0 1.5rem}.pgb{width:32px;height:32px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:12px;cursor:pointer;border:1px solid rgba(0,0,0,.09);background:var(--white90);color:var(--t2);transition:all .14s;font-family:inherit;font-weight:500}.pgb:hover{border-color:rgba(79,126,247,.24);color:var(--ac)}.pgb.on{background:rgba(79,126,247,.1);border-color:rgba(79,126,247,.24);color:var(--ac)}.pgb:disabled{opacity:.3;cursor:default}.pgb.pga{width:auto;padding:0 11px;font-size:11.5px}.svp{display:none;padding:1.2rem 0 2rem}.svp.v{display:block}.svp-hd{display:flex;align-items:center;justify-content:space-between;margin-bottom:.85rem;padding-bottom:.55rem;border-bottom:1px solid rgba(0,0,0,.06)}.svp-hd h2{font-family:'Playfair Display',serif;font-size:.95rem;font-weight:600;color:var(--t1)}.clrb{font-size:11.5px;cursor:pointer;color:var(--t3);background:none;border:none;font-family:inherit;transition:color .14s}.clrb:hover{color:#e05c8a}.sv-empty{text-align:center;padding:2.5rem;color:var(--t3);font-size:13px;line-height:1.7}.ss{margin-bottom:1.4rem}.sh{font-size:11px;font-weight:700;color:var(--t2);margin-bottom:7px;padding-bottom:5px;border-bottom:1px solid rgba(0,0,0,.06);text-transform:uppercase;letter-spacing:.5px}.td-card{background:var(--white75);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border:1px solid rgba(79,126,247,.17);border-radius:11px;padding:11px;box-shadow:0 3px 13px rgba(79,126,247,.07)}.tc-tag{font-size:10px;text-transform:uppercase;letter-spacing:.5px;color:var(--ac);margin-bottom:4px;font-weight:700}.tc-q{font-size:12px;color:var(--t1);line-height:1.5;cursor:pointer;transition:color .13s;margin-bottom:4px;font-weight:500}.tc-q:hover{color:var(--ac)}.tc-m{font-size:10.5px;color:var(--t3)}.tr-row{display:flex;align-items:flex-start;gap:7px;padding:5px 0;border-bottom:1px solid rgba(0,0,0,.05);cursor:pointer;transition:all .13s}.tr-row:last-child{border:none}.tr-row:hover .tr-t{color:var(--ac)}.tr-n{font-size:11px;font-weight:700;color:var(--ac);min-width:15px;flex-shrink:0;padding-top:1px}.tr-t{font-size:11px;color:var(--t2);line-height:1.4;transition:color .13s;font-weight:500}.tr-c{font-size:10px;color:var(--t3);margin-top:1px}.also-row{padding:5px 0;border-bottom:1px solid rgba(0,0,0,.05);cursor:pointer}.also-row:last-child{border:none}.also-t{font-size:11.5px;color:var(--t2);line-height:1.4;transition:color .13s}.also-t:hover{color:var(--ac)}.sim-c{background:var(--white75);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(0,0,0,.07);border-radius:9px;padding:8px 10px;margin-bottom:5px;cursor:pointer;transition:all .14s;box-shadow:0 2px 7px rgba(0,0,0,.04)}.sim-c:hover{box-shadow:0 4px 13px rgba(0,0,0,.07);transform:translateY(-1px)}.sim-cat{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;margin-bottom:2px}.sim-t{font-size:11.5px;color:var(--t1);line-height:1.4;font-weight:500}.email-cap{background:var(--white75);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid rgba(124,58,237,.17);border-radius:11px;padding:12px;box-shadow:0 3px 11px rgba(124,58,237,.06)}.ec-t{font-size:12px;font-weight:700;color:var(--t1);margin-bottom:3px}.ec-d{font-size:11px;color:var(--t3);margin-bottom:8px;line-height:1.5}.ec-row{display:flex;gap:5px}.ec-in{flex:1;padding:6px 9px;border-radius:var(--rp);border:1px solid rgba(0,0,0,.11);background:#fff;font-size:11.5px;font-family:inherit;color:var(--t1);outline:none}.ec-in:focus{border-color:rgba(124,58,237,.35)}.ec-btn{padding:6px 11px;border-radius:var(--rp);background:linear-gradient(135deg,var(--ac),var(--ac2));color:#fff;font-size:11px;font-weight:600;cursor:pointer;border:none;font-family:inherit;white-space:nowrap}.ec-ok{font-size:11px;color:var(--gr);margin-top:5px;font-weight:500;display:none}.t-hero{padding:1.6rem 1.8rem;background:var(--white75);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid rgba(0,0,0,.06)}.t-wrap{max-width:780px;margin:0 auto;padding:1.3rem 1.8rem 4rem}.tback{display:inline-flex;align-items:center;gap:5px;padding:.55rem 0 .9rem;font-size:12.5px;color:var(--t3);cursor:pointer;background:none;border:none;font-family:inherit;transition:color .13s}.tback:hover{color:var(--ac)}.tbread{font-size:11px;color:var(--t3);margin-bottom:6px}.tcat-tag{display:inline-block;font-size:10.5px;padding:3px 10px;border-radius:var(--rp);font-weight:600;margin-bottom:8px}.t-h1{font-family:'Playfair Display',serif;font-size:clamp(1.3rem,2.6vw,1.75rem);font-weight:700;color:var(--t1);line-height:1.2;margin-bottom:9px}.t-feel{font-size:13.5px;color:var(--t2);line-height:1.75;border-left:2.5px solid var(--ac);padding-left:12px;max-width:560px}.tsec{background:var(--white75);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border:1px solid rgba(255,255,255,.85);border-radius:var(--r);overflow:hidden;margin-bottom:10px;box-shadow:var(--gs)}.tsh{display:flex;align-items:center;gap:8px;padding:9px 14px;background:rgba(255,255,255,.45);border-bottom:1px solid rgba(0,0,0,.05)}.tsn{width:19px;height:19px;border-radius:50%;font-size:9.5px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;background:rgba(79,126,247,.1);color:var(--ac)}.tst{font-size:13px;font-weight:600;color:var(--t1)}.tsb{padding:12px 14px}.vgrid{display:grid;grid-template-columns:1fr 1fr;gap:8px}.vcard{background:var(--white90);border-radius:9px;padding:9px;border:1px solid rgba(0,0,0,.07);cursor:pointer;transition:all .13s;text-decoration:none;display:block}.vcard:hover{box-shadow:0 4px 14px rgba(0,0,0,.08);transform:translateY(-1px)}.vthumb{width:100%;height:52px;background:rgba(79,126,247,.06);border-radius:6px;margin-bottom:6px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;border:1px solid rgba(79,126,247,.09)}.vthumb::after{content:'▶';position:absolute;color:rgba(79,126,247,.4);font-size:15px}.vbar{position:absolute;bottom:0;left:0;height:2px;background:var(--ac);border-radius:1px}.ytag{position:absolute;top:5px;right:5px;background:rgba(200,0,0,.82);color:#fff;font-size:8px;font-weight:700;padding:1px 4px;border-radius:2px}.vtitle{font-size:11.5px;font-weight:500;color:var(--t1);line-height:1.4;margin-bottom:2px}.vmeta{font-size:10px;color:var(--t3)}.cklist{display:flex;flex-direction:column;gap:7px}.ckrow{display:flex;align-items:flex-start;gap:8px;cursor:pointer}.ckbox{width:14px;height:14px;border-radius:3px;border:1.5px solid rgba(0,0,0,.14);flex-shrink:0;margin-top:2px;transition:all .14s;display:flex;align-items:center;justify-content:center;background:#fff}.ckbox.dn{background:var(--gr);border-color:var(--gr)}.ckbox.dn::after{content:'✓';font-size:8.5px;color:#fff;font-weight:700}.cktx{font-size:12.5px;color:var(--t2);line-height:1.5;flex:1}.cktx.dn{text-decoration:line-through;opacity:.4}.cku{font-size:10px;padding:1px 6px;border-radius:var(--rp);background:rgba(224,92,138,.1);color:#e05c8a;border:1px solid rgba(224,92,138,.2);margin-left:5px;flex-shrink:0;font-weight:600}.ckt{font-size:10px;padding:1px 6px;border-radius:var(--rp);background:rgba(79,126,247,.08);color:var(--ac);border:1px solid rgba(79,126,247,.14);margin-left:5px;flex-shrink:0;font-weight:600}.mlist{display:flex;flex-direction:column;gap:8px}.mquo{background:rgba(79,126,247,.05);border-radius:9px;padding:11px 13px;border-left:2.5px solid var(--ac)}.mquo p{font-size:12.5px;color:var(--t1);line-height:1.7}.stgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:7px}.stcard{background:var(--white90);border-radius:9px;padding:11px;border:1px solid rgba(0,0,0,.06);text-align:center;box-shadow:0 2px 6px rgba(0,0,0,.04)}.stnum{font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:700;margin-bottom:3px}.stdesc{font-size:10.5px;color:var(--t3);line-height:1.4}.sitopts{display:flex;flex-direction:column;gap:5px;margin-bottom:8px}.sitopt{padding:9px 12px;border-radius:9px;border:1px solid rgba(0,0,0,.09);font-size:12.5px;color:var(--t2);cursor:pointer;transition:all .14s;background:var(--white90);text-align:left;font-family:inherit;font-weight:500}.sitopt:hover{border-color:rgba(79,126,247,.28);color:var(--t1)}.sitopt.pk{border-color:rgba(79,126,247,.38);background:rgba(79,126,247,.07);color:var(--ac)}.sitres{padding:11px 13px;background:rgba(5,150,105,.07);border:1px solid rgba(5,150,105,.18);border-radius:9px;font-size:12.5px;color:var(--gr);line-height:1.7;display:none;font-weight:500}.sitres.sh{display:block}.taicomp{display:grid;grid-template-columns:repeat(2,1fr);gap:7px}.taicard{background:var(--white90);border:1px solid rgba(0,0,0,.06);border-radius:10px;padding:11px;box-shadow:0 2px 6px rgba(0,0,0,.04)}.taicard.best{border-color:rgba(79,126,247,.28);background:rgba(79,126,247,.05)}.taih{display:flex;align-items:center;gap:6px;margin-bottom:6px}.taid{width:8px;height:8px;border-radius:50%;flex-shrink:0}.taipn{font-size:12px;font-weight:600;color:var(--t1)}.taistar{font-size:10px;padding:1px 6px;border-radius:var(--rp);background:rgba(79,126,247,.1);color:var(--ac);border:1px solid rgba(79,126,247,.2);margin-left:auto;font-weight:600}.taitxt{font-size:11.5px;color:var(--t2);line-height:1.6}.footer{border-top:1px solid rgba(0,0,0,.06);padding:1rem 1.8rem;background:rgba(255,255,255,.55);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.8rem}.footer-l{font-size:12px;color:var(--t3)}.footer-l a{color:var(--ac);text-decoration:none}.footer-l a:hover{text-decoration:underline}.fb-mini{display:flex;gap:5px;flex-wrap:wrap;align-items:center}.fb-in{padding:5px 11px;border-radius:var(--rp);border:1px solid rgba(0,0,0,.09);background:var(--white90);font-size:12px;font-family:inherit;color:var(--t1);outline:none;min-width:140px}.fb-in:focus{border-color:rgba(79,126,247,.34)}.fb-sel{padding:5px 9px;border-radius:var(--rp);border:1px solid rgba(0,0,0,.09);background:var(--white90);font-size:12px;font-family:inherit;color:var(--t2);outline:none;cursor:pointer}.fb-sub{padding:5px 14px;border-radius:var(--rp);background:linear-gradient(135deg,var(--ac),var(--ac2));color:#fff;font-size:12px;font-weight:600;cursor:pointer;border:none;font-family:inherit;transition:opacity .17s;white-space:nowrap}.fb-sub:hover{opacity:.88}.fb-ok{font-size:12px;color:var(--gr);font-weight:500;display:none}.page{display:none}.page.active{display:block}@media(max-width:820px){.layout{grid-template-columns:1fr}.side-col{display:none}.main-col{padding:1rem 0;border:none}nav{padding:.6rem 1rem}.study-sec{padding:1.5rem 1rem}.layout{padding:0 1rem}.vgrid,.stgrid,.taicomp{grid-template-columns:1fr}h1{font-size:1.65rem}.sg{grid-template-columns:1fr}.footer{flex-direction:column;align-items:flex-start}}.motive{font-size:11.5px;color:var(--t3);font-style:italic;margin-bottom:.4rem;min-height:16px;transition:opacity .4s}.motive.fade{opacity:0}.also-row{padding:5px 0;border-bottom:1px solid rgba(0,0,0,.05);cursor:pointer;display:flex;align-items:flex-start;gap:6px;transition:background .12s;border-radius:5px;padding-left:2px}.also-row:last-child{border:none}.also-row:hover{background:rgba(79,126,247,.05)}.also-row:hover .also-t{color:var(--ac)}.also-arr{font-size:10px;color:var(--t3);flex-shrink:0;padding-top:3px;transition:color .12s}.also-row:hover .also-arr{color:var(--ac)}.also-t{font-size:11.5px;color:var(--t2);line-height:1.4;flex:1}.ss:last-of-type{margin-bottom:0}.live-loading{display:flex;align-items:center;justify-content:center;gap:10px;padding:2.5rem 1rem;color:var(--t3);font-size:13px}.live-loading .ld-dots span{width:7px;height:7px;border-radius:50%;background:var(--ac);animation:bounce 1.2s ease-in-out infinite;display:inline-block;margin:0 2px}.live-loading .ld-dots span:nth-child(2){animation-delay:.2s}.live-loading .ld-dots span:nth-child(3){animation-delay:.4s}.cached-badge{display:inline-flex;align-items:center;gap:5px;font-size:10.5px;color:var(--t3);padding:3px 9px;border-radius:var(--rp);background:rgba(0,0,0,.04);margin-bottom:.6rem}</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="z">
+  <div class="logo" onclick="goHome()">
+    <div class="lm">N</div>
+    <div><div class="ln">NowStep</div><div class="lt">know your next step. instantly.</div></div>
+  </div>
+  <div class="nav-tabs">
+    <button class="nt on" id="tab-feed" onclick="switchTab('feed',this)">Decisions</button>
+    <button class="nt" id="tab-saved" onclick="switchTab('saved',this)">Saved <span class="sb-badge" id="sb-badge">0</span></button>
+  </div>
+  <div class="nav-r">
+    <button class="rbtn" onclick="doRefresh(this)"><span class="ri">↻</span> Refresh</button>
+    <button class="fbbtn" onclick="document.querySelector('.footer').scrollIntoView({behavior:'smooth'})">Feedback</button>
+  </div>
+</nav>
+
+<!-- HOME -->
+<div id="pg-home" class="page z active">
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="motive" id="motive"></div>
+    <h1>Stop overthinking.<br><em>Start deciding.</em></h1>
+    <p class="hero-sub">We compared all AI answers — here is what to do.</p>
+  </div>
+
+
+  <!-- MAIN LAYOUT -->
+  <div class="layout">
+    <div class="main-col">
+      <!-- CATEGORY FILTERS -->
+      <div class="fb" id="catRow" style="margin-top:1.2rem">
+        <span class="fl">Category</span>
+        <button class="chip on" onclick="fCat('all',this)">All</button>
+        <button class="chip" onclick="fCat('career',this)">Career</button>
+        <button class="chip" onclick="fCat('money',this)">Money</button>
+        <button class="chip" onclick="fCat('immigration',this)">Immigration</button>
+        <button class="chip" onclick="fCat('clarity',this)">Mental Clarity</button>
+        <button class="chip" onclick="fCat('life',this)">Life Decisions</button>
+        <button class="chip" onclick="fCat('general',this)">General</button>
+        <button class="chip" onclick="fCat('sports',this)" style="color:#0ea5e9;border-color:rgba(14,165,233,.25)">🏆 Sports</button>
+        <button class="chip" onclick="fCat('stocks',this)" style="color:#16a34a;border-color:rgba(22,163,74,.25)">📈 Stocks</button>
+        <button class="chip" onclick="fCat('housing',this)" style="color:#dc2626;border-color:rgba(220,38,38,.25)">🏠 Housing</button>
+        <button class="chip study-chip" onclick="fCat('study',this)">📚 What to Study</button>
+      </div>
+
+      <div class="feed-t" id="feedTitle">Today's decisions</div>
+
+      <div id="feedPanel">
+        <div id="qList"></div>
+        <div class="pager" id="pager"></div>
+      </div>
+      <div id="studyPanel" style="display:none;padding:.4rem 0 1rem"></div>
+      <div id="savedPanel" class="svp"></div>
+    </div>
+
+    <!-- SIDEBAR -->
+    <div class="side-col">
+      <div class="ss">
+        <div class="sh">Must decide today</div>
+        <div class="td-card">
+          <div class="tc-tag">Most searched</div>
+          <div class="tc-q" onclick="openTopic('h1b')">"I just got laid off on H-1B — what do I do in the next 60 days?"</div>
+          <div class="tc-m">Immigration · Full guide available</div>
+        </div>
+      </div>
+      <div class="ss"><div class="sh">Trending right now</div><div id="sideHot"></div></div>
+      <div class="ss"><div class="sh">People also searched</div><div id="alsoSearched"></div></div>
+      <div class="ss">
+        <div class="sh">Get 1 decision daily</div>
+        <div class="email-cap">
+          <div class="ec-t">Daily clarity in your inbox</div>
+          <div class="ec-d">One decision, answered simply. Free.</div>
+          <div class="ec-row"><input class="ec-in" type="email" placeholder="your@email.com" id="ecEmail"><button class="ec-btn" onclick="captureEmail()">Join</button></div>
+          <div class="ec-ok" id="ecOk">✓ You're in!</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TOPIC PAGE -->
+<div id="pg-topic" class="page z"><div id="topic-content"></div></div>
+
+<!-- FOOTER (feedback) -->
+<div class="footer z">
+  <div class="footer-l">NowStep &nbsp;·&nbsp; <a href="/cdn-cgi/l/email-protection#4b3b3924263b3f3b3e27382e7b7d7a790b2c262a222765282426">Contact</a></div>
+  <form class="fb-mini" onsubmit="submitFb(event)">
+    <input class="fb-in" type="email" id="fbEmail" placeholder="your@email.com" required>
+    <select class="fb-sel" id="fbType"><option value="feedback">Feedback</option><option value="suggestion">Suggest a topic</option><option value="bug">Bug report</option></select>
+    <input class="fb-in" type="text" id="fbMsg" placeholder="Your message..." required>
+    <button type="submit" class="fb-sub">Send</button>
+    <span class="fb-ok" id="fbOk">✓ Sent!</span>
+  </form>
+</div>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+
+
+
+const PC={chatgpt:'#10a37f',gemini:'#4285f4',claude:'#d97757',perplexity:'#5d5fef'};
+const PN={chatgpt:'ChatGPT',gemini:'Gemini',claude:'Claude',perplexity:'Perplexity'};
+const BEST={career:'claude',money:'perplexity',immigration:'claude',clarity:'claude',life:'claude',general:'claude'};
+const CCOLOR={career:'#e8703a',money:'#059669',immigration:'#4f7ef7',clarity:'#7c3aed',life:'#d97706',general:'#64748b',sports:'#0ea5e9',stocks:'#16a34a',housing:'#dc2626'};
+const CBG={career:'rgba(232,112,58,.1)',money:'rgba(5,150,105,.1)',immigration:'rgba(79,126,247,.1)',clarity:'rgba(124,58,237,.1)',life:'rgba(217,119,6,.1)',general:'rgba(100,116,139,.1)'};
+
+
+const STUDY=[
+  {type:'tech',demand:'Very High',skill:'AI / Prompt Engineering',
+   sit:"I want to switch into AI-related roles or make myself AI-proof",
+   dec:"Learn prompt engineering + one AI framework (LangChain or LlamaIndex) + Python basics.",
+   steps:["Complete Andrej Karpathy's 'Neural Networks: Zero to Hero' on YouTube — free, 8 hrs","Build one project: a chatbot or doc Q&A app using LangChain. Put it on GitHub.","Complete DeepLearning.ai's 'Prompt Engineering for Developers' (free with Coursera trial)"],
+   why:"AI skills are required in 38% of new tech job postings in 2025. This gap closes fast."},
+  {type:'tech',demand:'Very High',skill:'System Design',
+   sit:"I'm a developer who keeps failing senior engineering interviews",
+   dec:"Study system design systematically for 8 weeks — it is a learnable, structured skill.",
+   steps:["Read 'System Design Interview' by Alex Xu — the most used book for FAANG prep","Practice 2 designs per week: URL shortener, Instagram feed, rate limiter, chat system","Use Excalidraw to diagram every design — interviewers score communication as much as the solution"],
+   why:"System design is the primary differentiator between mid-level and senior engineering roles at every major company."},
+  {type:'tech',demand:'High',skill:'Cloud (AWS / Azure / GCP)',
+   sit:"I want to make myself more hireable as a developer or data engineer",
+   dec:"Get the AWS Solutions Architect Associate cert — the most recognized cloud credential across industries.",
+   steps:["Use Adrian Cantrill's AWS SAA course ($40 one-time — best course available)","Create a free AWS account and build the hands-on labs — theory alone won't pass the exam","Schedule the exam ($150) within 8 weeks of starting — the deadline forces you to finish"],
+   why:"Cloud skills appear in 60%+ of data, DevOps, and backend job descriptions in 2025."},
+  {type:'tech',demand:'High',skill:'SQL & Data Analysis',
+   sit:"I want to move into data roles or make better decisions at my current job",
+   dec:"Master SQL first — the single most transferable skill across data, product, finance, and operations.",
+   steps:["Complete Mode Analytics' SQL tutorial (free) — covers SELECT to window functions","Complete 50 LeetCode SQL problems (Easy + Medium) — covers 90% of real interview questions","Build a portfolio: pick a public dataset, write 10 interesting queries, publish to GitHub"],
+   why:"SQL proficiency appears in 72% of data analyst job descriptions — more than Python."},
+  {type:'tech',demand:'High',skill:'Backend (Python / FastAPI)',
+   sit:"I want to break into software engineering or level up as a backend developer",
+   dec:"Learn Python + FastAPI + PostgreSQL. This stack gets you hired as a backend developer fastest in 2025.",
+   steps:["Complete 'Python for Everybody' on Coursera (free audit) — solid foundation in 6 weeks","Build a REST API with FastAPI connecting to PostgreSQL — deploy free to Railway.app","Add authentication (JWT) and write tests — these additions make your project interview-ready"],
+   why:"Python is the #1 language by job postings. FastAPI is the modern choice — faster than Django, simpler than Flask."},
+  {type:'product',demand:'Very High',skill:'AI Product Management',
+   sit:"I'm a PM who wants to stay relevant as AI transforms product roles",
+   dec:"Learn to spec and ship AI features — the rarest PM skill in 2025.",
+   steps:["Read 'Inspired' by Marty Cagan + Ethan Mollick's 'Co-Intelligence'","Take Reforge's 'AI for Product Managers' course — the most respected PM upskilling program","Ship one AI feature at your current company, however small — the experience beats any course"],
+   why:"Product roles requiring AI knowledge grew 340% between 2023 and 2025."},
+  {type:'product',demand:'High',skill:'User Research',
+   sit:"I want to become a stronger product manager or UX designer",
+   dec:"Master user interview fundamentals — the most undervalued PM and UX skill.",
+   steps:["Read 'The Mom Test' by Rob Fitzpatrick — 2-hour read that changes how you talk to customers","Conduct 5 user interviews for any product you currently use. Write up the findings.","Take Google's UX Design Certificate on Coursera ($50/month) — the research modules alone are worth it"],
+   why:"User research is the #1 skill gap identified in PM hiring at Airbnb, Stripe, and Notion."},
+  {type:'finance',demand:'High',skill:'Financial Modeling',
+   sit:"I want to break into investment banking, private equity, or corporate finance",
+   dec:"Master three-statement modeling in Excel — the foundation of every finance interview.",
+   steps:["Complete Breaking Into Wall Street's free Excel crash course on YouTube — 4 hrs, essential foundation","Build a three-statement model from scratch using a real company's 10-K — document every assumption","Practice LBO modeling using a simple private company — PE firms expect this in first-round interviews"],
+   why:"Three-statement modeling appears in 85% of finance analyst job descriptions. It's table stakes."},
+  {type:'finance',demand:'High',skill:'Excel (Advanced)',
+   sit:"I want to be more effective at any office job — this skill crosses all industries",
+   dec:"Learn XLOOKUP, pivot tables, Power Query, and basic macros — handles 90% of real business analysis.",
+   steps:["Complete ExcelJet's free tutorial library (exceljet.net) — best free Excel resource","Build a real project: a sales dashboard or budget model using data from your actual job","Complete Chandoo.org's Power Query course — the gap most Excel users have"],
+   why:"Advanced Excel appears in 58% of all non-technical job descriptions and is universally underpracticed."},
+  {type:'soft',demand:'Very High',skill:'Executive Communication',
+   sit:"I'm technically strong but struggling to get promoted or taken seriously in meetings",
+   dec:"Learn the Pyramid Principle — the single most impactful communication framework for professionals.",
+   steps:["Read 'The Pyramid Principle' by Barbara Minto — 3 hours. Apply it to every email for 30 days.","Record yourself presenting once per week on any topic for 5 minutes. Watch it back. Fix one thing.","Take Toastmasters (in-person or online) for 2 months — repetition builds fluency faster than any course"],
+   why:"Communication is cited as the #1 factor in promotion decisions by 73% of managers (LinkedIn 2024)."},
+  {type:'soft',demand:'High',skill:'Negotiation & Influence',
+   sit:"I want to negotiate better — salary, contracts, decisions at work",
+   dec:"Study principled negotiation. 'Never Split the Difference' + one real practice cycle changes your outcomes.",
+   steps:["Read 'Never Split the Difference' by Chris Voss — the most actionable negotiation book available","Practice tactical empathy in one real negotiation this month — salary, rent, vendor, anything","Join r/negotiation on Reddit or find a practice partner through LinkedIn"],
+   why:"People who negotiate their salary one extra time earn an average of $1M more over a 40-year career."},
+  {type:'emerging',demand:'Explosive',skill:'Multi-Agent AI Systems',
+   sit:"I'm a developer or AI enthusiast who wants to be ahead of the next wave",
+   dec:"Learn to build multi-agent workflows with LangGraph or CrewAI — where enterprise AI is moving in 2025.",
+   steps:["Complete LangChain's free LangGraph course at academy.langchain.com — the official tutorial","Build an agent that browses the web and writes a research report — the entry-level project","Read Anthropic's and OpenAI's published agent research papers — understanding the 'why' differentiates you"],
+   why:"Multi-agent AI is moving from research to production in 2025. Early expertise is extremely rare and valued."},
+  {type:'emerging',demand:'Very High',skill:'Cybersecurity (CompTIA Security+)',
+   sit:"I want to enter one of the fastest-growing tech fields with clear job demand",
+   dec:"Get CompTIA Security+ within 12 weeks — the most recognized entry-level security cert.",
+   steps:["Study with Professor Messer's free Security+ course on YouTube — the best free prep available","Buy the CompTIA practice exam pack ($40) — pass rate correlates strongly with practice exam scores","Apply for junior SOC analyst roles with the cert — many companies pay $65–90K, no CS degree required"],
+   why:"Cybersecurity has 3.5M unfilled positions globally. Security+ holders are hired within 2 months of certification on average."},
+  {type:'emerging',demand:'High',skill:'No-Code / Automation (Zapier, Make)',
+   sit:"I want to build things and save time without learning to code",
+   dec:"Master Zapier + Make — 20 hours of practice makes you more productive than most developers at automation.",
+   steps:["Complete Zapier University (free at zapier.com/university) — 4 hours covers everything you need","Build 5 real automations in your own life: email sorting, form → sheet, Slack notifications","Offer automation consulting to one local business — even one paid project validates the skill"],
+   why:"No-code automation appears in 22% of ops, marketing, and analyst job descriptions — growing 60% year-over-year."},
+];
+
+
+const DB=[
+
+{id:1,cat:'career',hot:true,tid:'layoff',
+ sit:"I just got laid off. What is the single most important thing I should do in the next 24 hours?",
+ dec:"File for unemployment today and calculate your exact runway before sending a single application.",
+ steps:["File for unemployment online right now — clock starts from your last day, not when you file","Calculate: savings ÷ monthly expenses = months of runway. Write this down — it eliminates panic.","Do NOT sign any severance agreement for 21 days — you have the legal right to review and negotiate"],
+ why:"Panicked applications sent from financial fear produce worse outcomes and are visible to recruiters.",
+ agree:91,p:['chatgpt','claude','perplexity'],
+ consensus:"All models agree: financial clarity and unsigned paperwork come before job applications.",
+ ans:{chatgpt:"<strong>First 48 hours:</strong> Get termination letter in writing. File for unemployment — clock starts from last day. Secure health insurance via COBRA or Marketplace (60-day window). Calculate runway. Most people discover it's longer than they feared.",
+  claude:"<strong>The 21-day rule:</strong> You have 21 days by law. A $200 attorney review often adds $5,000–$15,000 to a severance offer. Your network fills 70% of roles — start reconnecting before you're desperate.",
+  perplexity:"<strong>By the numbers:</strong> Average severance: 1–2 weeks/year of service. Unemployment: 40–50% of prior wages for up to 26 weeks. Average professional job search: 3–5 months."}},
+{id:2,cat:'career',hot:true,tid:'interview',
+ sit:"I have an interview tomorrow. What is the most important thing to prepare?",
+ dec:"Prepare one perfect story about your greatest professional accomplishment — it can carry the entire interview.",
+ steps:["Write your best win: Situation → your specific Action (not 'we') → Measurable result. Practice out loud 3×","Research one specific recent company news item — mention it naturally in your first answer","Prepare 'tell me about yourself': 30s background + 30s biggest win + 30s why this role"],
+ why:"Interviewers score on quality of examples, not breadth of experience. Specificity always wins.",
+ agree:88,p:['chatgpt','claude','gemini'],
+ consensus:"All models agree: one great story told well outperforms five mediocre ones.",
+ ans:{chatgpt:"<strong>The story formula:</strong> Name the situation, state the obstacle, say exactly what YOU did, cite the measurable result. '18% churn reduction' beats 'improved retention.' Prepare this cold.",
+  claude:"<strong>Day-before secret:</strong> Practice 'tell me about yourself' out loud 5 times until it sounds natural. Interviewers remember how you made them feel more than what you said.",
+  gemini:"<strong>For tech companies:</strong> Know their culture values cold — Amazon LPs, Google Googleyness, Meta impact values. Every round scores these explicitly."}},
+{id:3,cat:'career',hot:true,tid:'salary',
+ sit:"I just got a job offer. Should I negotiate or just accept it?",
+ dec:"Always negotiate. 87% of hiring managers expect it and almost nobody loses an offer by asking respectfully.",
+ steps:["Research market rate on Glassdoor, Levels.fyi, and LinkedIn Salary — 3 data points minimum","Say: 'I'm excited about this. Based on my research, I was hoping we could get to [X]. Is there flexibility?' Then go silent.","If base is locked, ask about signing bonus, extra PTO, or equity — these are often separate budget lines"],
+ why:"The first person to speak after the counter loses. Make the ask, then wait.",
+ agree:90,p:['chatgpt','claude','perplexity'],
+ consensus:"All models agree: always negotiate. The downside risk of a respectful ask is near zero.",
+ ans:{chatgpt:"<strong>The exact script:</strong> 'I'm really excited about this opportunity. Based on my research, I was hoping we could get to [X]. Is there room there?' Then stop talking. Silence is your ally.",
+  claude:"<strong>What most get wrong:</strong> They justify with personal needs ('I have rent'). Use market data: 'The market rate for this role is X–Y.' Employers pay for value, not expenses.",
+  perplexity:"<strong>Data point:</strong> 85% of people who negotiated got an increase. Average was 13% above initial offer. Employers almost never rescind an offer over a courteous counter."}},
+{id:4,cat:'career',hot:false,
+ sit:"Should I quit my job before I have another one lined up?",
+ dec:"No — unless the situation is harming your health. Stay employed while you search. Your leverage is 10× higher.",
+ steps:["Update LinkedIn to 'Open to Work (recruiter only)' — invisible to your employer","Start applying quietly — 2 targeted applications per day beats 20 unfocused ones","If the job is genuinely harming your mental health, leaving with 3–6 months runway is the right call"],
+ why:"Employed candidates statistically receive higher offers — you negotiate from strength, not desperation.",
+ agree:85,p:['chatgpt','claude','gemini'],
+ consensus:"All models strongly recommend searching while employed unless there is an active health reason to leave.",
+ ans:{chatgpt:"<strong>The leverage difference:</strong> You negotiate from 'I'm happy where I am' rather than 'I need this.' That posture alone shifts offers.",
+  claude:"<strong>The honest exception:</strong> If the job is actively harming your mental health — not just stressful, but genuinely damaging — then leaving with financial runway is the right call. Your health is not worth any job.",
+  gemini:"<strong>Market context 2025:</strong> Hiring managers can tell when candidates are searching from panic. Stay until you have an offer in hand."}},
+{id:5,cat:'career',hot:false,
+ sit:"I feel underpaid but I'm scared to have the raise conversation with my manager.",
+ dec:"Have the conversation. Being paid below market is worse than the discomfort of asking.",
+ steps:["Build your brag document: every win and metric from the last 12 months with numbers","Schedule a 1:1 as 'I'd love to discuss my role and growth' — not 'I want a raise' (very different energy)","Lead with: 'Based on my contributions and current market rates, I'd like to discuss a compensation adjustment'"],
+ why:"Managers rarely proactively raise salaries. If you don't ask, you stay underpaid.",
+ agree:84,p:['chatgpt','claude','gemini'],
+ consensus:"All models agree: ask with data, not emotion. Managers respond to value arguments, not need arguments.",
+ ans:{chatgpt:"<strong>The ask:</strong> 'Based on what I've delivered — X, Y, Z — and current market data, I'd like to discuss adjusting my compensation to [X]. Can we talk about what that looks like?'",
+  claude:"<strong>Time it right:</strong> Have this 6 months before review season, not during it. By review time, comp decisions are often already made.",
+  gemini:"<strong>If budget is frozen:</strong> Ask about title change now with compensation adjustment when the freeze lifts — in writing. Companies grant this more often than you'd expect."}},
+{id:6,cat:'career',hot:false,
+ sit:"I want to change careers completely at 35. Is it too late?",
+ dec:"Not too late — but do it via a bridge role, not a cold jump. Find the intersection of your expertise and the target field first.",
+ steps:["Write your transferable skills inventory — your background is an edge somewhere in the new field","Research 5 people on LinkedIn who made a similar pivot. Message them with one specific question.","Target the bridge role first — it values what you have AND points where you're going"],
+ why:"One bridge role makes the second move 10× easier. Most people skip it and give up too early.",
+ agree:80,p:['chatgpt','claude','gemini'],
+ consensus:"All models agree: bridge role strategy beats cold pivot. Your existing expertise is an asset in the right context.",
+ ans:{chatgpt:"<strong>The bridge role:</strong> A lawyer who wants to work in tech doesn't start as a junior developer — they move into tech legal, privacy, or product management where legal judgment is the differentiator.",
+  claude:"<strong>You're not starting over:</strong> You're bringing 15 years of judgment to a new context. Lead with it: 'Here's what I bring that nobody who grew up in this industry has.'",
+  gemini:"<strong>Timeline:</strong> Successful career changers typically take 18–36 months and two moves, not one. Expecting one jump leads to quitting at exactly the wrong moment."}},
+{id:7,cat:'career',hot:false,
+ sit:"How do I know if a company's culture is toxic before accepting an offer?",
+ dec:"The interview process itself is the culture. How they treat you as a candidate is how they treat employees.",
+ steps:["Ask every interviewer: 'What have you personally found hardest about working here?' — can they answer honestly?","Check LinkedIn: if median tenure for non-entry roles is under 18 months, something is systematically wrong","Read Glassdoor negative reviews for patterns — recurring themes are signal, not drama"],
+ why:"No company claims to have a toxic culture. You have to infer it from behavior.",
+ agree:86,p:['chatgpt','claude','gemini'],
+ consensus:"All models agree: behavioral signals during the process reveal culture better than any Glassdoor summary.",
+ ans:{chatgpt:"<strong>Red flags:</strong> Visibly unprepared interviewers. Evasiveness about why the last person left. All positives, no honest challenges. Multiple reschedules without apology.",
+  claude:"<strong>The one question:</strong> 'What have you found hardest about working here?' — the ability to answer honestly is a signal of psychological safety.",
+  gemini:"<strong>LinkedIn tenure check:</strong> Filter the company's employees by tenure. If senior role median is under 18 months, that's a pattern worth taking seriously."}},
+{id:8,cat:'career',hot:false,
+ sit:"My performance review was lower than I expected and I disagree with my manager.",
+ dec:"Don't argue in the meeting. Present your data calmly once, plant the seed, and execute visibly for 6 months.",
+ steps:["Prepare 3 specific contributions with quantified impact before your next 1:1","Ask: 'What specifically would a higher rating have looked like this cycle?'","Ask if the rating was committee-calibrated — if so, your path runs through changing your manager's advocacy"],
+ why:"Most rating reversals happen after the meeting — in the next calibration cycle — not in the room.",
+ agree:82,p:['chatgpt','claude','gemini'],
+ consensus:"All models agree: data first, emotion never. The next cycle is where reversals happen.",
+ ans:{chatgpt:"<strong>In the meeting:</strong> Receive feedback fully. Do not defend. Ask clarifying questions. Then share your data once — three specific examples with numbers.",
+  claude:"<strong>The committee angle:</strong> Many ratings are set by committee — your manager may agree with you but was overruled. Your path is changing their conviction for next cycle.",
+  gemini:"<strong>The long game:</strong> Note your disagreement, execute exactly what they outlined, document everything. Most high-performers who've been mis-rated get the correction in 6–12 months."}},
+
+
+{id:9,cat:'money',hot:true,
+ sit:"I have credit card debt that feels out of control. Where do I even start?",
+ dec:"Stop the bleeding first. Build a $1,000 emergency buffer. Then attack the highest-interest card with every spare dollar.",
+ steps:["List every card, balance, and APR right now — most people haven't faced the full number in months","Open a separate savings account and automate $25/week until you hit $1,000 — this breaks the cycle","Set minimum auto-payments on all cards, direct everything extra to the highest APR card"],
+ why:"Without the $1,000 buffer, you'll pay off a card and immediately raid it for the next emergency.",
+ agree:89,p:['chatgpt','claude','perplexity'],
+ consensus:"All models agree: emergency buffer before aggressive debt payoff. Without it you'll undo your progress.",
+ ans:{chatgpt:"<strong>Avalanche vs Snowball:</strong> Mathematically, pay highest interest first. Psychologically, pay smallest balance first — the dopamine hit of eliminating a payment keeps people going. Best method: the one you'll actually sustain.",
+  claude:"<strong>Balance transfer option:</strong> 0% APR balance transfer cards (12–21 months) exist. If your credit score is 650+, this pauses interest and gives you a runway. Transfer fee is 3–5% — still often worth it at 20%+ APR.",
+  perplexity:"<strong>Call your lender:</strong> 40–60% of people who ask their credit card company for a hardship rate reduction get something. You have nothing to lose."}},
+{id:10,cat:'money',hot:false,tid:'refinance',
+ sit:"Should I refinance my mortgage right now?",
+ dec:"Only if you can drop your rate by 0.75%+ AND your break-even point is under 36 months.",
+ steps:["Get quotes from 3 lenders: your bank, a credit union, and an online lender (Better.com or LoanDepot)","Calculate break-even: closing costs ÷ monthly payment reduction = months to recoup. Under 36? Proceed.","Compare 15-year vs 30-year — a 15-year often saves more total interest than a 30-year at a lower rate"],
+ why:"Your bank is almost never the best rate. Shopping lenders saves tens of thousands.",
+ agree:86,p:['chatgpt','claude','perplexity'],
+ consensus:"All models agree: the break-even calculation is the only number that matters. Get at least 3 quotes.",
+ ans:{chatgpt:"<strong>The math:</strong> Closing costs $3,000–$6,000. If new payment saves $200/month, break-even is 15–30 months. Staying 5+ years? Refinancing is almost certainly worth it.",
+  claude:"<strong>The term trap:</strong> A 30-year refinance resets your amortization clock. If you're 10 years in, always run both 15-year and 30-year scenarios before deciding.",
+  perplexity:"<strong>Shopping data:</strong> Borrowers who get 5+ quotes save an average of $3,000 over the loan life vs those who get 1–2."}},
+{id:11,cat:'money',hot:false,
+ sit:"I have $10,000 saved. What should I actually do with it?",
+ dec:"In order: pay off debt above 8% APR → 3-month emergency fund → max Roth IRA → low-cost index fund.",
+ steps:["Check for high-interest debt (above 8% APR) — paying it off is a guaranteed return at that rate","Open a Roth IRA at Fidelity or Vanguard — $7,000/year limit in 2025, grows tax-free for life","Buy VTI or FSKAX (total market index fund) — set up automatic monthly contributions and don't check it daily"],
+ why:"The sequence matters more than the specific choice at each step. Most people skip steps and lose.",
+ agree:92,p:['chatgpt','claude','perplexity'],
+ consensus:"All models agree on the sequence. Order is more important than picking the 'best' investment.",
+ ans:{chatgpt:"<strong>The compound math:</strong> $10K at 7% for 30 years = $76,000. The same $10K at 20% APR credit card unpaid costs $77,000 in interest. The most important decision is which you tackle first.",
+  claude:"<strong>Roth IRA timing:</strong> You can contribute for the prior tax year until April 15. If you missed last year, you can contribute for both years in one move.",
+  perplexity:"<strong>Index fund evidence:</strong> Index funds outperform 85–90% of actively managed funds over 15-year periods after fees."}},
+{id:12,cat:'money',hot:false,
+ sit:"Is my financial advisor actually working in my interest?",
+ dec:"Ask them directly: 'Are you a fee-only fiduciary?' If they hesitate or give a non-answer, you have your answer.",
+ steps:["Ask: 'Are you legally required to act in my best interest at all times as a fiduciary?' Get a clear yes or no.","Look them up at finra.org/brokercheck — all complaints and disciplinary actions are public","Ask to see their ADV Part 2 form — legally required to disclose all compensation arrangements"],
+ why:"'Advisor' requires no fiduciary duty. 'Fee-only fiduciary' is the legal protection.",
+ agree:88,p:['chatgpt','claude','perplexity'],
+ consensus:"All models agree: fiduciary status is the single most important factor in advisor selection.",
+ ans:{chatgpt:"<strong>Red flags:</strong> Frequent product switches. Heavy annuities or variable universal life as 'investments.' Actively managed funds with high expense ratios when index funds would do the same.",
+  claude:"<strong>The test:</strong> A good advisor will mention strategies like holding appreciated assets until death to eliminate capital gains tax. A commission advisor won't — there's nothing to sell.",
+  perplexity:"<strong>Fee-only alternatives:</strong> NAPFA.org lists certified fee-only financial planners. Vanguard Personal Advisor charges 0.3% annually."}},
+
+
+{id:13,cat:'immigration',hot:true,tid:'h1b',
+ sit:"I just got laid off on an H-1B visa. How many days do I have and what do I do right now?",
+ dec:"You have 60 days from your last day of employment. Activate all three paths simultaneously — do not wait.",
+ steps:["Track 1 — Job search: apply immediately to cap-exempt employers (universities, nonprofits, research institutions) — they can hire year-round with no lottery","Track 2 — Status change: evaluate F-1, H-4 (if spouse has H-1B), or B-1/B-2 — file before day 60","Track 3 — Attorney: book an immigration attorney this week — many offer a free 30-minute initial call"],
+ why:"The 60-day clock runs from your last day. It has no extensions and no exceptions.",
+ agree:93,p:['chatgpt','claude','perplexity'],
+ consensus:"All models agree: all three tracks must start simultaneously, and an attorney is essential within the first week.",
+ ans:{chatgpt:"<strong>The 60-day grace period:</strong> During this time you cannot work, but you can transfer to a new H-1B sponsor or change status. Cap-exempt employers can file immediately.",
+  claude:"<strong>H-1B portability:</strong> A new employer can file an H-1B transfer and you can begin working when they FILE — before USCIS approves. This requires prior H-1B approval and 180+ days in H-1B status.",
+  perplexity:"<strong>Cap-exempt employers:</strong> All universities, most large hospital systems affiliated with universities, nonprofit research organizations, and government research institutions. Many are actively hiring."}},
+{id:14,cat:'immigration',hot:true,
+ sit:"My H-1B lottery registration got selected. What do I need to do and what mistakes should I avoid?",
+ dec:"Move quickly and accurately — petition filing errors are the primary reason selected H-1B petitions get denied.",
+ steps:["Ensure your employer files the I-129 petition within the USCIS deadline (typically April–June for Oct 1 start)","Verify consistency: degree certificate, transcripts, employment letter, and LCA must all align","Ask for a copy of the filed petition — review specialty occupation documentation carefully (most common denial reason)"],
+ why:"The lottery is luck. The petition is skill. Don't let a paperwork error waste your lottery win.",
+ agree:90,p:['chatgpt','claude','perplexity'],
+ consensus:"All models agree: accuracy and completeness matter more than speed. Specialty occupation documentation is the most common failure point.",
+ ans:{chatgpt:"<strong>Premium processing:</strong> Your employer can pay ~$2,805 for USCIS to decide within 15 business days. For time-sensitive situations, it's worth requesting.",
+  claude:"<strong>Specialty occupation risk:</strong> USCIS scrutinizes whether the position requires a bachelor's degree. Liberal arts degrees paired with tech titles are frequently challenged. Ensure your degree field connects to the job duties precisely.",
+  perplexity:"<strong>RFE is not a denial:</strong> A Request for Evidence gives you 90 days to respond. Do not let your employer respond without an immigration attorney — RFE responses are high-stakes legal documents."}},
+{id:15,cat:'immigration',hot:true,
+ sit:"My OPT is ending in 3 months and I don't have an H-1B. What are my realistic options?",
+ dec:"If you have STEM OPT eligibility, apply for the 24-month extension immediately. Otherwise, evaluate all alternatives before OPT expires.",
+ steps:["Check: is your degree STEM? If yes, apply for STEM OPT extension ASAP through your DSO — 24 more months","If STEM OPT was already used: evaluate H-4, cap-exempt H-1B employer, or O-1 visa","If nothing is available: voluntary departure before expiration — overstaying triggers 3–10 year bars from re-entry"],
+ why:"Overstaying any US visa — even by one day — triggers multi-year bars from re-entry. This is irreversible.",
+ agree:91,p:['chatgpt','claude','perplexity'],
+ consensus:"All models agree: STEM OPT extension first if eligible. Overstay consequences are severe and must be avoided.",
+ ans:{chatgpt:"<strong>STEM OPT timing:</strong> Apply at least 90 days before your current OPT expiration. File through your DSO. Processing times vary — do not wait until 60 days before.",
+  claude:"<strong>O-1 visa option:</strong> If you have publications, patents, awards, or high salary relative to peers — the O-1 is not just for celebrities. Many skilled professionals qualify. An attorney can evaluate your case.",
+  perplexity:"<strong>Cap-exempt employers:</strong> Universities, nonprofits, and government research organizations can file H-1B at any time of year. If you can find a role there, you bypass the lottery entirely."}},
+{id:16,cat:'immigration',hot:false,
+ sit:"Should I apply for a green card now or wait for a better situation?",
+ dec:"Start the process now — waiting costs you priority date advancement that cannot be recovered.",
+ steps:["Talk to your employer's immigration attorney about starting PERM labor certification — this sets your priority date","Check your priority date at travel.state.gov — the Visa Bulletin shows current cut-off dates by category and country","If you're from a non-backlogged country (most of Europe, South America), file aggressively — your wait may be under 2 years"],
+ why:"Priority date is set when you file, not when you're approved. Earlier is always better. The EB-2/EB-3 backlog for Indian nationals can span decades.",
+ agree:89,p:['chatgpt','claude','perplexity'],
+ consensus:"All models agree: start immediately to preserve the earliest possible priority date.",
+ ans:{chatgpt:"<strong>The backlog reality:</strong> Indian nationals in EB-2/EB-3 may wait 30–80+ years. The viable bypasses: EB-1A (extraordinary ability) or EB-2 NIW (National Interest Waiver) — both allow self-petition without employer sponsorship.",
+  claude:"<strong>AC21 portability:</strong> After I-140 approval and I-485 pending for 180+ days, you can change employers in the same or similar occupation without losing your priority date. This eliminates the 'employer trap.'",
+  perplexity:"<strong>I-140 protection:</strong> Even if your priority date isn't current, an approved I-140 lets you extend your H-1B in 3-year increments — significant stability before the green card is approved."}},
+{id:17,cat:'immigration',hot:false,
+ sit:"My visa appointment keeps getting delayed. Is there anything I can do to speed it up?",
+ dec:"Yes — emergency appointment requests, third-country scheduling, and Congressperson inquiries are real tools that often work.",
+ steps:["Request an emergency/expedited appointment through the consulate portal — document your urgent need (job start date, expiring documents)","Check other consulates — wait times vary enormously. The same visa at a different consulate may take weeks instead of months.","Contact your US Congressperson's office — their constituent services team can formally inquire with the State Department"],
+ why:"Consular wait times vary wildly by location. Congressperson inquiries often yield faster results than waiting in the standard queue.",
+ agree:83,p:['chatgpt','claude','perplexity'],
+ consensus:"All models agree: emergency appointments and Congressperson inquiries are underused but real, legitimate tools.",
+ ans:{chatgpt:"<strong>Emergency criteria:</strong> Each consulate has specific qualifying reasons — typically medical emergency, business-critical travel, or expiring documents. Document your specific reason carefully.",
+  claude:"<strong>Congressperson inquiry:</strong> Call your US Representative or Senator's local office. Ask them to submit a constituent services inquiry to the State Department. This is completely legal and frequently produces faster results.",
+  perplexity:"<strong>Real-time wait data:</strong> travel.state.gov/content/travel/en/us-visas/visa-information-resources/wait-times.html — current appointment wait times by consulate worldwide, updated regularly."}},
+{id:18,cat:'immigration',hot:false,
+ sit:"Should I consider moving to Canada instead of waiting for US immigration to work out?",
+ dec:"Canada deserves serious evaluation — Express Entry has no lottery, no annual cap, and can result in PR in 6–18 months for many skilled workers.",
+ steps:["Create a free Express Entry profile at canada.ca/express-entry and calculate your CRS score","Check recent draw cut-offs — rounds happen every 2 weeks. If your CRS is above recent cut-offs, expect an ITA quickly.","Research tech hubs: Toronto, Vancouver, Waterloo — strong markets, universal healthcare, clear PR path"],
+ why:"For high-CRS candidates (typically 480+), Canada Express Entry is faster and more predictable than H-1B plus a decades-long green card wait.",
+ agree:84,p:['chatgpt','claude','perplexity'],
+ consensus:"All models agree: Canada Express Entry is a serious, often faster alternative to US H-1B for skilled workers from backlogged countries.",
+ ans:{chatgpt:"<strong>Express Entry categories:</strong> Federal Skilled Worker (FSW) for international work experience. Canadian Experience Class for Canadian work experience. Most tech workers with a degree qualify for FSW.",
+  claude:"<strong>Provincial Nominee Programs:</strong> Provinces can nominate candidates at lower CRS scores. Ontario, BC, and Alberta all have tech streams. A provincial nomination adds 600 CRS points — virtually guaranteeing an ITA.",
+  perplexity:"<strong>Comparison:</strong> H-1B: ~13% lottery selection rate, employer-tied. Canada Express Entry: no lottery, employer optional, PR in 6–24 months for strong profiles."}},
+{id:19,cat:'immigration',hot:false,
+ sit:"My company was acquired. What happens to my H-1B visa?",
+ dec:"If it is a stock acquisition (same legal entity), your H-1B typically remains valid. If it is an asset acquisition, the new employer must file an H-1B transfer immediately.",
+ steps:["Ask HR immediately: 'Is this a stock acquisition or asset acquisition?' — this determines your visa status","Stock deal with no change in legal entity: your H-1B remains valid, no action required","Asset deal or legal entity change: push the new employer to file an H-1B transfer before or on the closing date — not weeks after"],
+ why:"Unknowingly working for an employer that hasn't properly assumed your H-1B sponsorship is unauthorized work and affects future applications.",
+ agree:88,p:['chatgpt','claude','perplexity'],
+ consensus:"All models agree: ask the legal entity question immediately after acquisition news. The answer determines everything.",
+ ans:{chatgpt:"<strong>Stock vs asset:</strong> Stock acquisition = same EIN, your H-1B continues. Asset acquisition = new legal entity, H-1B transfer required. Get HR to confirm in writing.",
+  claude:"<strong>Timing risk:</strong> If an asset acquisition closes and the new employer doesn't file an H-1B immediately, you may be in an unauthorized work situation. Push for the filing to happen on closing day, not weeks later.",
+  perplexity:"<strong>AC21 portability:</strong> Even if you change employers due to an acquisition, you can use AC21 portability if your I-140 was approved and I-485 has been pending for 180+ days — no restart of the green card process needed."}},
+{id:20,cat:'immigration',hot:false,
+ sit:"Should I hire an immigration lawyer or use online DIY services like Boundless?",
+ dec:"For complex situations (H-1B petitions, green cards, RFEs, prior overstays), hire an attorney. For simple filings with no complications, DIY services are often adequate.",
+ steps:["Evaluate your complexity: any RFEs, denials, criminal history, prior overstays, or employer sponsorship → hire an attorney","For simple cases: Boundless, Immigrate.com, and CitizenPath have reasonable track records","Verify any attorney at uscis.gov — only licensed US attorneys or accredited representatives can legally charge for immigration advice"],
+ why:"Immigration errors are not easily corrected. A $300 mistake on a petition can result in a $15,000 denial and years of delays.",
+ agree:85,p:['chatgpt','claude','perplexity'],
+ consensus:"All models agree: complexity of situation determines whether you need an attorney. When in doubt, consult first.",
+ ans:{chatgpt:"<strong>How to find a legitimate attorney:</strong> AILA.org (American Immigration Lawyers Association) has a member directory. State bar websites verify licenses. 'Notario' and 'immigration consultant' are NOT lawyers.",
+  claude:"<strong>Cost reality:</strong> A good immigration attorney charges $2,000–$5,000 for an H-1B petition, $3,000–$8,000 for employment-based green card. High numbers — but the cost of a petition error is almost always higher.",
+  perplexity:"<strong>Free resources:</strong> Many nonprofit legal organizations offer free or low-cost immigration assistance. ILRC.org, CLINIC.org, and law school immigration clinics are starting points."}},
+
+
+{id:21,cat:'clarity',hot:true,
+ sit:"I feel completely stuck and don't know what I want anymore.",
+ dec:"Stop trying to think your way to clarity. Clarity comes from action — not more reflection.",
+ steps:["Try the 'two lives' exercise: write two radically different but equally valid lives you could live. Notice what each reveals.","List the last 5 times you lost track of time doing something — the pattern points at something real","Have one conversation with someone who seems to have what you want — ask what their path actually looked like"],
+ why:"Analysis paralysis grows with more thinking. Movement creates data that reflection cannot.",
+ agree:86,p:['chatgpt','claude','gemini'],
+ consensus:"All models agree: action generates clarity. More reflection without new input produces more paralysis.",
+ ans:{chatgpt:"<strong>The reframe:</strong> You don't need to know your life purpose. You need to know the next interesting step. People who seem to have it figured out found something worth their time and got better at it.",
+  claude:"<strong>The research:</strong> Work that produces lasting satisfaction has three traits: mastery (getting better at something), mattering to others, and autonomy. If your situation lacks two of these structurally, that's the problem — not you.",
+  gemini:"<strong>At 35:</strong> Most people have enough experience to know what they don't want but not enough to know what they do want. The path through it is experimentation, not more planning."}},
+{id:22,cat:'clarity',hot:false,
+ sit:"I can't stop worrying about everything. Is this anxiety or just overthinking?",
+ dec:"If the worry is persistent, uncontrollable, and affecting your daily function — it is likely anxiety. See a doctor or therapist.",
+ steps:["Track your worry for one week: what triggered it, how long it lasted, whether it came true — patterns reduce intensity","Cut caffeine for 2 weeks — it amplifies the sympathetic nervous system, the same system anxiety activates","Book a GP appointment and describe your symptoms — doctors hear this every day"],
+ why:"Generalized anxiety disorder affects 6.8 million US adults. It responds well to treatment.",
+ agree:89,p:['chatgpt','claude','gemini'],
+ consensus:"All models agree: describe specific symptoms to a doctor. This is a clinical question with clinical tools available.",
+ ans:{chatgpt:"<strong>CBT evidence:</strong> Cognitive Behavioral Therapy has response rates of 60–80% for GAD, panic disorder, and social anxiety. It works by identifying cognitive distortions and gradually reducing avoidance behaviors.",
+  claude:"<strong>The caffeine reality:</strong> A 3pm coffee has half its caffeine still active at 10pm — amplifying sympathetic nervous system activity all evening. Eliminating caffeine for 2 weeks often produces rapid, measurable improvement.",
+  gemini:"<strong>Exercise evidence:</strong> A 2023 BMJ meta-analysis found exercise approximately as effective as medication for mild-to-moderate anxiety, with no side effects and durable benefits."}},
+{id:23,cat:'clarity',hot:false,
+ sit:"I think I need therapy but don't know where to start or if it will help.",
+ dec:"Try it. The evidence base is strong, the barrier is lower than ever, and the cost of not starting is almost always higher than the cost of a bad first session.",
+ steps:["Use Psychology Today's therapist finder (psychologytoday.com/us/therapists) — filter by insurance and specialty","Start with one clear goal: 'I want to understand why I keep repeating the same pattern' beats 'I want to feel better'","Give it 8–12 sessions before judging — some therapists need 3–4 sessions to build enough trust for productive work"],
+ why:"If you're asking this question, you already know something isn't working. That awareness is the beginning.",
+ agree:91,p:['chatgpt','claude','gemini'],
+ consensus:"All models agree: start. The cost of not starting is consistently higher than the cost of a bad first session.",
+ ans:{chatgpt:"<strong>What works by condition:</strong> CBT for anxiety and depression. DBT for emotional regulation. EMDR for trauma and PTSD. If a therapist can't tell you their modality and its evidence base, that is a yellow flag.",
+  claude:"<strong>Signs your therapist is effective:</strong> You leave with something specific to think about or try. You feel genuinely understood. Something has shifted in 8–12 sessions, even slightly.",
+  gemini:"<strong>Modern access:</strong> BetterHelp and Talkspace have made therapy significantly more accessible. Many universities have low-cost community mental health clinics."}},
+
+
+{id:24,cat:'life',hot:true,
+ sit:"I'm thinking about moving to a new city. How do I know if it's the right decision?",
+ dec:"Move only if you've done a trial week, have at least one real contact there, and can answer: why there, why now, what if it doesn't work.",
+ steps:["Do a one-week trial stay — work from cafes, cook, grocery shop. Simulate real life, not a holiday.","Identify at least one person who will actually help you settle in — community is the hardest part of any move","Define your exit condition: if X doesn't happen within Y months, I reassess. Month 3 is the hardest — knowing this prevents quitting early."],
+ why:"The city is rarely the issue. The lack of social infrastructure is almost always the issue.",
+ agree:83,p:['chatgpt','claude','gemini'],
+ consensus:"All models agree: social infrastructure matters far more than the specific city's attributes.",
+ ans:{chatgpt:"<strong>The 3-month threshold:</strong> Almost everyone reports month 3 as the hardest — novelty worn off, community not built yet. Knowing this prevents giving up at exactly the wrong moment.",
+  claude:"<strong>The financial calculation:</strong> Moving costs, lease break, job search, higher rents — many moves cost $15,000–$30,000 when all factors are included. Worth knowing before you decide.",
+  gemini:"<strong>Building community:</strong> Join one recurring activity — a sports league, a class, a running club. Recurring beats one-time events every time."}},
+{id:25,cat:'life',hot:false,
+ sit:"Should I start a side business while keeping my day job?",
+ dec:"Yes — but validate before you build. Sell to 3 real customers before building anything.",
+ steps:["Identify one service someone will pay you for today — not a product, a service. Services require no upfront cost.","Tell 20 people you're offering this now — not 'one day I'm going to' but 'I'm doing this, who needs it?'","Charge for the first engagement even if it feels small — free work creates no market signal"],
+ why:"Revenue is the only real validation. Everything else is hypothesis.",
+ agree:87,p:['chatgpt','claude','perplexity'],
+ consensus:"All models agree: sell before you build. Revenue first, everything else second.",
+ ans:{chatgpt:"<strong>The sequence:</strong> Identify a skill → Tell people → Charge for the first job → Deliver well → Ask for a referral. This is the complete zero-cost launch.",
+  claude:"<strong>The day job advantage:</strong> You don't need the side business to work to survive — so you can be selective, charge appropriately, and find good clients.",
+  perplexity:"<strong>Most viable in 2025:</strong> AI-assisted content creation, bookkeeping, video editing, online tutoring, digital products. Digital services have near-zero marginal cost once created."}},
+{id:26,cat:'life',hot:false,
+ sit:"I'm overthinking a decision and I can't move forward.",
+ dec:"Set a decision deadline and commit to the better option from your current information. You will never have perfect information.",
+ steps:["Use the 'regret minimization' framework: imagine yourself at 80. Which choice would you regret NOT making?","Write down the worst realistic outcome of each option — the 'scary' option's worst case is usually manageable","Put a specific deadline in your calendar: 'By Friday noon, I will have made this decision.'"],
+ why:"Most overthinking is trying to achieve certainty that doesn't exist. Deciding with uncertainty is a skill.",
+ agree:85,p:['chatgpt','claude','gemini'],
+ consensus:"All models agree: set a deadline and commit. The cost of indecision usually exceeds the cost of either option.",
+ ans:{chatgpt:"<strong>The 70% rule:</strong> Jeff Bezos makes decisions when he has 70% of the information he wishes he had. Waiting for 90% often means being too slow.",
+  claude:"<strong>The coin flip test:</strong> Flip a coin — heads for option A, tails for option B. Notice your emotional reaction before it lands. If you feel relief at one result, you already know what you want.",
+  gemini:"<strong>Most 'permanent' decisions aren't:</strong> Moving can be un-moved. Jobs can be left. The catastrophizing about finality is usually exaggerated — and that is the core of most overthinking."}},
+
+
+{id:27,cat:'general',hot:true,
+ sit:"Which AI tool should I actually be using for my work right now?",
+ dec:"Use Claude for deep reasoning and documents, ChatGPT for general tasks, Perplexity for research with citations. No single model wins everything.",
+ steps:["Drafting documents, analyzing PDFs, reasoning through decisions: Claude","Research requiring citations and current data: Perplexity — not ChatGPT, which confabulates without warning","General tasks, image understanding, tool integrations, coding: ChatGPT"],
+ why:"The productivity gap between AI-native and non-AI workers is now measurable. Using the right tool for the right task matters.",
+ agree:88,p:['chatgpt','claude','perplexity'],
+ consensus:"All models agree: no single model wins everything. Task-specific selection produces meaningfully better outcomes.",
+ ans:{chatgpt:"<strong>Practical workflow:</strong> Research → Perplexity. Deep decisions → Claude. General tasks + coding → ChatGPT. Multimodal (images, video) → Gemini. Code IDE → Cursor with Claude.",
+  claude:"<strong>Context-setting is the real skill:</strong> People who get 10× gains give AI their specific situation before asking. 'I'm a PM at a B2B SaaS company writing for CTOs' beats 'write a LinkedIn post' every time.",
+  perplexity:"<strong>Honest limitation:</strong> All LLMs confabulate — they generate fluent, confident text that is sometimes factually wrong. For any factual claim that matters, verify with a primary source."}},
+{id:28,cat:'general',hot:false,
+ sit:"Is learning to code still worth it in the age of AI?",
+ dec:"Yes — but what's worth learning has shifted. Understanding code matters more than memorizing syntax.",
+ steps:["Focus on: reading code, debugging, architecture, and writing clear specs for AI to implement","Python remains the highest-value first language — ecosystem, readability, best AI tooling integration","Most valuable 2025 skill: giving AI a precise specification and critically evaluating what it produces"],
+ why:"AI writes the first draft. You need to know if it is right.",
+ agree:84,p:['chatgpt','claude','gemini'],
+ consensus:"All models agree: code literacy (understanding) remains valuable even as code writing becomes more AI-assisted.",
+ ans:{chatgpt:"<strong>What has changed:</strong> Syntax memorization matters less. Understanding architecture, debugging, security, and whether AI-generated code is correct matters more.",
+  claude:"<strong>The new most valuable skill:</strong> Prompt engineering for code — how to give AI a precise specification, break a problem into clear subtasks, and evaluate the output. Worth more than writing code from scratch.",
+  gemini:"<strong>Tools redefining coding:</strong> Cursor AI, GitHub Copilot, and Replit have made building small apps accessible to non-developers. Code literacy remains valuable even if writing from scratch becomes less necessary."}},
+
+,{id:101,cat:'sports',hot:true,
+ sit:"I play recreational sports but keep getting injured. Should I push through or rest?",
+ dec:"Rest the injury fully before returning. Playing through pain turns minor injuries into chronic ones.",
+ steps:["Stop the activity causing pain for at least 72 hours — use RICE (Rest, Ice, Compression, Elevation)","See a physio if pain persists past 5 days — self-diagnosis is how minor strains become tears","Build back gradually: 50% intensity for first session back, not full effort"],
+ why:"Most chronic sports injuries start as ignored acute ones. One missed week beats six months out.",
+ agree:88,p:['chatgpt','claude','perplexity'],
+ consensus:"All models agree: rest now beats a long-term injury that sidelines you for months.",
+ ans:{chatgpt:"<strong>The rule:</strong> If pain changes your movement pattern (limping, favoring one side), stop immediately. Compensating mechanics cause secondary injuries.",claude:"<strong>Physio first:</strong> A single physio session often resolves what weeks of self-treatment can't. The cost is far less than an MRI or surgery later.",perplexity:"<strong>Recovery data:</strong> Athletes who rest 3–5 days return to full performance faster than those who play through, on average 40% less total downtime."}},
+{id:102,cat:'sports',hot:false,
+ sit:"I want to start running but I've never been athletic. Where do I actually begin?",
+ dec:"Start with run-walk intervals. Couch to 5K (C25K) is the evidence-backed program — 9 weeks, 3 sessions/week.",
+ steps:["Download the free C25K app — it tells you exactly when to run and walk, no guesswork","Buy one decent pair of running shoes fitted at a running store — injury prevention starts there","Commit to 3 sessions/week for 4 weeks before judging whether you like it"],
+ why:"80% of beginner running injuries come from doing too much too soon. C25K's progression is specifically designed to prevent this.",
+ agree:91,p:['chatgpt','claude','perplexity'],
+ consensus:"All models agree: structured beginner programs like C25K dramatically reduce injury and dropout rates.",
+ ans:{chatgpt:"<strong>The program:</strong> Week 1 is 60-second run, 90-second walk, repeated. Most people can do this. By week 9 you run 30 minutes continuously.",claude:"<strong>Shoe fitting matters:</strong> Running store staff will watch you walk/run and recommend the right support. This alone prevents knee and ankle injuries.",perplexity:"<strong>Success rate:</strong> C25K has a completion rate of 70%+ when done consistently — far higher than unstructured running starts."}},
+{id:103,cat:'sports',hot:true,
+ sit:"I want to get into the gym but don't know what program to follow. There's too much conflicting advice.",
+ dec:"Follow a proven beginner program for 12 weeks before changing anything. StrongLifts 5x5 or Reddit's Basic Beginner Routine.",
+ steps:["Pick ONE program and do it exactly as written for 12 weeks — no substitutions","3 days/week, compound lifts only (squat, deadlift, bench, row) — this covers everything","Track every session: weight lifted, reps completed. Progress is the only metric that matters early"],
+ why:"Beginners gain strength fastest following consistent progressive overload. Program-hopping is the #1 reason people stall.",
+ agree:87,p:['chatgpt','claude','perplexity'],
+ consensus:"All models agree: consistency with a simple proven program beats any complex optimized routine for beginners.",
+ ans:{chatgpt:"<strong>StrongLifts 5x5:</strong> Free app, 3 days/week, 5 compound exercises. Adds weight every session. Most beginners make 6 months of progress before stalling.",claude:"<strong>The real secret:</strong> Sleep and eating enough protein matter more than which program you choose. 0.7g protein per lb bodyweight, 7–8 hours sleep.",perplexity:"<strong>What the research shows:</strong> Compound movements (squat, deadlift, bench) activate more muscle and produce more hormonal response than isolation exercises."}},
+
+{id:201,cat:'stocks',hot:true,
+ sit:"I have $5,000 and want to start investing but don't know where to begin.",
+ dec:"Open a Roth IRA, buy a total market index fund (VTI or FSKAX), and automate monthly contributions. That's it.",
+ steps:["Open a Roth IRA at Fidelity or Vanguard — takes 10 minutes, $0 minimum","Buy VTI (Vanguard Total Market) or FSKAX (Fidelity) — one fund covers 3,500+ US companies","Set up automatic monthly investment of whatever you can afford — $50/month beats $5,000 once a year"],
+ why:"Index funds beat 90% of actively managed funds over 15 years after fees. This is not controversial among financial economists.",
+ agree:93,p:['chatgpt','claude','perplexity'],
+ consensus:"All models agree: low-cost index funds in a tax-advantaged account is the optimal starting point for most investors.",
+ ans:{chatgpt:"<strong>Why Roth IRA first:</strong> You contribute after-tax dollars but all growth and withdrawals are tax-free. On $5K growing to $50K over 30 years, you pay $0 in tax on the $45K gain.",claude:"<strong>The compounding math:</strong> $5,000 at 7% average return for 30 years = $38,000. The same $5,000 in a savings account at 0.5% = $5,778. Time and market returns do the work.",perplexity:"<strong>Index fund evidence:</strong> S&P 500 index has returned ~10% annually since 1957. 92% of active fund managers underperform it over 15 years after fees."}},
+{id:202,cat:'stocks',hot:true,
+ sit:"The market is down 20%. Should I sell everything or hold?",
+ dec:"Hold, and if possible, buy more. Every market downturn in history has recovered. Selling locks in losses permanently.",
+ steps:["Do nothing — check your portfolio less, not more, during downturns","If you have cash and a 5+ year horizon, continue or increase regular contributions (you're buying cheaper)","Review your allocation only: if a 20% drop caused panic, you may be overexposed to equities — adjust when markets recover, not now"],
+ why:"The investors who panic-sell in downturns miss the recovery. Missing the 10 best days in the S&P 500 over 20 years cuts returns in half.",
+ agree:89,p:['chatgpt','claude','perplexity'],
+ consensus:"All models agree: time in the market beats timing the market. Selling during downturns is how ordinary investors destroy long-term returns.",
+ ans:{chatgpt:"<strong>Historical context:</strong> Every S&P 500 decline of 20%+ has fully recovered. Average recovery time: 2 years. Average gain from trough to next peak: 47%.",claude:"<strong>The behavioral trap:</strong> Markets fall fast and recover slowly. Investors who sell during the drop often wait for 'certainty' before buying back — and miss most of the recovery.",perplexity:"<strong>Missing the best days:</strong> If you invested $10K in the S&P 500 in 2003 and held, you'd have ~$61K by 2023. If you missed the 10 best days, only $28K."}},
+{id:203,cat:'stocks',hot:false,
+ sit:"Everyone is talking about a specific stock. Should I buy it?",
+ dec:"No. By the time it's in the news and your social feed, the informed money has already moved. You're the exit liquidity.",
+ steps:["Ask yourself: what do you know that institutional investors with research teams don't? The honest answer is usually nothing.","If you still want exposure, limit it to 5% of your portfolio maximum — treat it as a lottery ticket, not an investment","Read the company's actual financials before any buy: revenue trend, debt, profit margins, competitive moat"],
+ why:"Retail investors who buy trending stocks underperform the market by 3–5% annually on average. The hype is the signal to wait.",
+ agree:85,p:['chatgpt','claude','perplexity'],
+ consensus:"All models agree: FOMO-driven single stock buying is one of the most reliable ways to underperform simple index investing.",
+ ans:{chatgpt:"<strong>The meme stock lesson:</strong> GameStop, AMC, and dozens of others showed the pattern: hype → retail buy → institutional sell → retail holds the bag.",claude:"<strong>The information edge problem:</strong> You're trading against algorithms and analysts who know the company's supply chain, management, and industry trends. Your edge has to be something they don't have.",perplexity:"<strong>Trending stock returns:</strong> Stocks mentioned on Reddit's WallStreetBets underperform the market by an average of 10% in the 6 months after peak mention volume."}},
+
+{id:301,cat:'housing',hot:true,
+ sit:"Should I buy a house now or keep renting given high interest rates?",
+ dec:"Run your personal break-even calculation first. Buying only wins if you stay 5+ years and the monthly cost doesn't stretch you.",
+ steps:["Calculate your true monthly cost: mortgage + taxes + insurance + maintenance (1% of home value/year) vs rent","Use the NY Times buy vs rent calculator — it's the most comprehensive free tool available","If break-even is under 5 years and you have 20% down without depleting savings, buying makes sense financially"],
+ why:"At current rates, renting is financially superior for stays under 4–5 years in most markets. The decision is personal, not automatic.",
+ agree:82,p:['chatgpt','claude','perplexity'],
+ consensus:"All models agree: the buy-vs-rent decision depends entirely on your specific numbers and timeline, not the general market narrative.",
+ ans:{chatgpt:"<strong>The hidden costs:</strong> Homeownership costs 1–2% of home value annually in maintenance alone. A $400K home = $4,000–8,000/year just to maintain, before mortgage.",claude:"<strong>The 5-year rule:</strong> Closing costs (2–5% of purchase price) and transaction costs on sale (6%) mean you need significant appreciation just to break even on a short stay.",perplexity:"<strong>Current math:</strong> At 7% interest, a $400K mortgage costs ~$2,661/month in interest+principal. Add taxes and insurance and total carrying cost often exceeds equivalent rent."}},
+{id:302,cat:'housing',hot:true,
+ sit:"I'm a first-time buyer and the process feels overwhelming. Where do I actually start?",
+ dec:"Get pre-approved for a mortgage before looking at a single house. It defines your actual budget and makes you a credible buyer.",
+ steps:["Check your credit score first — anything below 740 costs you in interest rate. Spend 3–6 months improving it if needed","Get pre-approval from 3 lenders (your bank, a credit union, and an online lender like Better.com) — compare APR not just rate","Only then start home search, with a buyer's agent who represents you (not the seller's agent)"],
+ why:"Buyers who skip pre-approval fall in love with homes they can't afford, or lose competitive offers to pre-approved buyers.",
+ agree:90,p:['chatgpt','claude','perplexity'],
+ consensus:"All models agree: pre-approval before home search is the single most important first step for every first-time buyer.",
+ ans:{chatgpt:"<strong>Credit score impact:</strong> A 760 vs 680 credit score on a $400K mortgage can mean 0.5–1% rate difference — that's $80–160/month, $29,000–58,000 over 30 years.",claude:"<strong>Buyer's agent is free to you:</strong> In most states, the seller pays both agents' commissions. There's no reason not to have representation — the listing agent works for the seller.",perplexity:"<strong>Multiple lenders:</strong> Getting 3+ mortgage quotes saves an average of $3,000 over the loan life compared to going with the first lender."}},
+{id:303,cat:'housing',hot:false,
+ sit:"My landlord is raising rent significantly. Should I negotiate or move?",
+ dec:"Negotiate first — most landlords prefer a reliable tenant over vacancy. Then run the math on moving before deciding.",
+ steps:["Research comparable rents in your area (Zillow, Apartments.com) — know the market before the conversation","Email your landlord: 'I'd like to stay. I've researched the market and comparable units are at $X. Can we discuss?'","Calculate total move cost: first+last+deposit (new) + movers + time off work — usually $3,000–8,000. Factor this into the decision"],
+ why:"Vacancy costs landlords 1–2 months of rent plus leasing fees. You have more leverage than you think.",
+ agree:86,p:['chatgpt','claude','perplexity'],
+ consensus:"All models agree: negotiation is almost always worth attempting before moving — vacancy is expensive for landlords.",
+ ans:{chatgpt:"<strong>The landlord's math:</strong> 1 month vacancy + listing fee (often 1 month rent) + time to find a tenant = 2–3 months of lost revenue. Your ask for $100 less is cheap by comparison.",claude:"<strong>How to negotiate:</strong> Lead with your track record as a tenant (on-time payments, no damage, no complaints). Make it easy to say yes.",perplexity:"<strong>Leverage tip:</strong> If the raise is more than 10%, get competing offers in writing from other buildings — showing you're serious about moving increases your negotiating position dramatically."}}
+];
+
+
+
+
+const QUOTES=[
+  "A good decision now is better than a perfect decision never.",
+  "Clarity comes from action, not from thought. — Marie Forleo",
+  "The risk of a wrong decision is preferable to the terror of indecision. — Maimonides",
+  "Done is better than perfect. — Sheryl Sandberg",
+  "Stop waiting for the right moment. Create it.",
+  "In any moment of decision, the best thing is to do the right thing. — Theodore Roosevelt",
+  "You cannot make progress without making decisions. — Jim Rohn",
+  "Make the decision. Then make it right.",
+  "The most difficult thing is the decision to act. — Amelia Earhart",
+  "Confidence is not 'they will like me' — it is 'I will be fine if they don't'.",
+];
+
+let qi=Math.floor(Math.random()*QUOTES.length);
+function showMotive(idx){
+  const el=document.getElementById('motive');if(!el)return;
+  el.textContent='"'+QUOTES[idx]+'"';
+}
+function nextQ(){
+  const el=document.getElementById('motive');if(!el)return;
+  el.classList.add('fade');
+  setTimeout(()=>{
+    qi=(qi+1)%QUOTES.length;
+    el.textContent='"'+QUOTES[qi]+'"';
+    el.classList.remove('fade');
+  },350);
+}
+
+document.addEventListener('DOMContentLoaded',()=>showMotive(qi));
+
+
+
+let catF='all',openId=null,curPage=1,savedIds=new Set(),cmpModes={},curTab='feed',searchTerm='',studyF='all',currentCategory='all';
+const PER=8;
+try{const s=JSON.parse(localStorage.getItem('decido_v3')||'[]');savedIds=new Set(s);}catch{}
+function saveSaved(){try{localStorage.setItem('decido_v3',JSON.stringify([...savedIds]));}catch{}}
+
+
+const API = '/.netlify/functions/ai'; 
+const SESSION_CACHE = {}; 
+
+
+let liveDB = [...DB];
+let liveStudy = [...STUDY];
+let isLiveData = false;
+
+
+async function callClaude(prompt, maxTokens=1200) {
+  const res = await fetch('/.netlify/functions/ai', {
+    method: 'POST',
+    headers: {'Content-Type':'application/json'},
+    body: JSON.stringify({ prompt, maxTokens })
+  });
+  if (!res.ok) throw new Error('Proxy error ' + res.status);
+  let raw = await res.text();
+  raw = raw.replace(/```json|```/g, '').trim();
+  const match = raw.match(/\[[\s\S]*\]/);
+  if (!match) throw new Error('No JSON array in response');
+  try { return JSON.parse(match[0]); }
+  catch { return []; }
+}
+
+async function fetchDecisions(category) {
+  const key = 'decisions_' + category;
+  if (SESSION_CACHE[key]) return SESSION_CACHE[key];
+
+  const catLabels = {
+    all: 'career, immigration, money, mental clarity, and life decisions',
+    sports: 'sports, fitness, athletics, and physical health decisions',
+    stocks: 'stock market investing, personal finance, and wealth building',
+    housing: 'real estate, renting vs buying, mortgages, and home decisions'
+  };
+  const catLabel = catLabels[category] || category;
+
+  const prompt = `Return a JSON array only. No markdown, no explanation — just the array.
+
+Generate 8 real decisions people face right now in: ${catLabel}.
+
+[
+  {
+    "situation": "Specific 1-line situation a real person is facing right now",
+    "decision": "The single clearest thing they should do — direct, no hedging",
+    "steps": [
+      "Step 1: Specific action with exact resource/tool/number (e.g. 'Open Fidelity.com, create a Roth IRA, invest in FSKAX')",
+      "Step 2: Next concrete action with real detail — not vague advice",
+      "Step 3: How to know it worked / what to do next"
+    ],
+    "why": "One sentence: why this decision matters right now in 2025"
+  }
+]
+
+Quality rules:
+- Each situation must be specific — not generic (bad: 'I want to invest', good: 'I have $3K sitting in savings doing nothing')
+- Steps must name real tools, platforms, numbers — not abstract advice
+- Mix urgency levels: some time-sensitive, some long-term
+- JSON array only. Start with [ and end with ]`;
+
+  const items = await callClaude(prompt, 1600);
+  const valid = items.filter(q => q.situation && q.decision && Array.isArray(q.steps));
+  if (valid.length < 2) throw new Error('Too few valid items');
+  SESSION_CACHE[key] = valid;
+  return valid;
+}
+async function fetchStudyData(type) {
+  const key = 'study_' + type;
+  if (SESSION_CACHE[key]) return SESSION_CACHE[key];
+
+  const typeLabel = {
+    all: 'tech, product, finance, soft skills, and emerging fields',
+    tech: 'software engineering and AI/ML',
+    product: 'product management and UX',
+    finance: 'finance and investment',
+    soft: 'communication, leadership, and negotiation',
+    emerging: 'AI, cybersecurity, automation, and new tech fields'
+  }[type] || type;
+
+  const typeInstructions = type === 'all'
+    ? 'Vary the "type" field across: tech, product, finance, soft, emerging'
+    : `Set "type" to "${type}" for all items`;
+
+  const prompt = `You are NowStep. Generate 8 skills people should study right now for ${typeLabel}.
+
+Return ONLY a JSON array. No markdown. Each item:
+{
+  "type": "tech" | "product" | "finance" | "soft" | "emerging",
+  "demand": "High" | "Very High" | "Explosive",
+  "skill": "Skill name (short, e.g. System Design)",
+  "sit": "One-line situation: who needs this and why now",
+  "dec": "The single most important first action (1 sentence)",
+  "steps": ["Concrete step 1", "Concrete step 2", "Concrete step 3"],
+  "why": "One sentence: why this matters in 2025 job market"
+}
+
+${typeInstructions}. JSON array only. No explanation.`;
+
+  const items = await callClaude(prompt, 1500);
+  const valid = items.filter(s => s.skill && s.sit && s.dec && Array.isArray(s.steps));
+  if (valid.length < 2) throw new Error('Too few study items');
+  SESSION_CACHE[key] = valid;
+  return valid;
+}
+
+async function fetchRelated(question) {
+  const key = 'related_' + question.id;
+  if (SESSION_CACHE[key]) return SESSION_CACHE[key];
+
+  const prompt = `Given this question someone is struggling with: "${question.sit}"
+
+Generate 5 related questions people also ask. Return ONLY a JSON array:
+[
+  {"sit": "Related question 1", "cat": "${question.cat}"},
+  {"sit": "Related question 2", "cat": "${question.cat}"},
+  ...
+]
+
+Make them genuinely related — same context, different angle. Realistic and specific.`;
+
+  const items = await callClaude(prompt, 400);
+  SESSION_CACHE[key] = items.filter(i => i.sit);
+  return SESSION_CACHE[key];
+}
+
+
+let pool=[];
+function initPool(){
+  const src = (liveDB && liveDB.length) ? liveDB : DB;
+  const hot=src.filter(q=>q&&q.hot).sort(()=>Math.random()-.5);
+  const rest=src.filter(q=>q&&!q.hot).sort(()=>Math.random()-.5);
+  pool=[...hot,...rest];
+}
+initPool();
+
+function getFiltered(){
+  let qs=liveDB.filter(q=>{
+    if(catF!=='all'&&q.cat!==catF)return false;
+    if(searchTerm){const t=searchTerm.toLowerCase();return q.sit.toLowerCase().includes(t)||q.dec.toLowerCase().includes(t)||(q.steps||[]).some(s=>s.toLowerCase().includes(t));}
+    return true;
+  });
+  const order=new Map(pool.map((q,i)=>[q.id,i]));
+  return qs.sort((a,b)=>(order.get(a.id)||0)-(order.get(b.id)||0));
+}
+
+
+function showFeedLoading(msg='Generating fresh insights...'){
+  const list=document.getElementById('qList');
+  if(list)list.innerHTML=`<div class="live-loading"><div class="ld-dots"><span></span><span></span><span></span></div><span>${msg}</span></div>`;
+  const pg=document.getElementById('pager');if(pg)pg.innerHTML='';
+}
+
+
+async function loadLiveDecisions(category, showLoading=true){
+  if(showLoading)showFeedLoading();
+  try{
+    const items = await fetchDecisions(category);
+    
+    if(category==='all'){
+      liveDB=[...items, ...DB.filter(q=>!items.find(i=>i.sit===q.sit))].slice(0,40);
+    } else {
+      liveDB=[
+        ...items,
+        ...DB.filter(q=>q.cat!==category)
+      ];
+    }
+    isLiveData=true;
+    initPool();
+    render();
+    
+    const ft=document.getElementById('feedTitle');
+    if(ft)ft.innerHTML=(category==='all'?'Today\'s decisions':cap(category)+' decisions')+' <span style="font-size:10px;color:var(--gr);font-weight:400;margin-left:6px">✦ live</span>';
+  } catch(e){
+    console.warn('Live fetch failed, using static:', e);
+    liveDB=[...DB];
+    initPool();
+    render();
+    const ft=document.getElementById('feedTitle');
+    if(ft)ft.innerHTML=(category==='all'?'Today\'s decisions':cap(category)+' decisions')+' <span style="font-size:10px;color:var(--t3);font-weight:400;margin-left:6px">(cached)</span>';
+  }
+}
+
+
+async function loadLiveStudy(type='all'){
+  
+  const sp = document.getElementById('studyPanel');
+  if (sp) sp.innerHTML = '<div class="live-loading"><div class="ld-dots"><span></span><span></span><span></span></div><span>Fetching study insights...</span></div>';
+  try {
+    const items = await fetchStudyData(type);
+    if (items && items.length) {
+      liveStudy = items;
+    }
+    renderFlashcards(type);
+  } catch(e) {
+    console.warn('Study fetch failed, using static:', e);
+    liveStudy = [...STUDY];
+    renderFlashcards(type);
+  }
+}
+
+
+function renderStudy(){}
+function filterStudy(type,el){renderFlashcards(type);}
+
+
+function render(){
+  if(curTab==='saved'){renderSaved();return;}
+  const filtered=getFiltered();
+  const total=filtered.length;
+  const totalPages=Math.max(1,Math.ceil(total/PER));
+  if(curPage>totalPages)curPage=1;
+  const start=(curPage-1)*PER;
+  const pageQs=filtered.slice(start,start+PER);
+  const list=document.getElementById('qList');
+  list.innerHTML='';
+  const title=document.getElementById('feedTitle');
+  if(searchTerm)title.textContent='Results for "'+searchTerm+'"';
+  else if(catF!=='all')title.textContent=cap(catF)+' decisions';
+  else title.textContent="Today's decisions";
+
+  if(!pageQs.length){
+    list.innerHTML='<div class="empty-st"><p>No decisions match — try a different filter or use the search bar to get an AI-generated answer.</p><button class="es-btn" onclick="clearFilters()">Clear filters</button></div>';
+    renderPager(0,0);renderSidebar(filtered,null);return;
+  }
+
+  pageQs.forEach((q,i)=>{
+    const isOpen=openId===q.id;
+    const cm=cmpModes[q.id]||'tabs';
+    const bp=BEST[q.cat]||'claude';
+    const cc=CCOLOR[q.cat]||'#4f7ef7';
+    const isSaved=savedIds.has(q.id);
+    const plats=q.p||Object.keys(q.ans).slice(0,3);
+    const agreeC=q.agree>=85?'var(--gr)':q.agree>=70?'var(--cc-life)':'var(--cc-imm)';
+    const s1=q.steps?.[0]||'';
+    const moreS=q.steps?.slice(1)||[];
+
+    const tabsH=plats.map((p,j)=>`<button class="aitab${j===0&&cm==='tabs'?' on':''}" onclick="sTab(${q.id},'${p}',this)">${PN[p]||p}</button>`).join('')+`<button class="aitab" onclick="sTab(${q.id},'con',this)">Consensus</button>`;
+    const ansH=plats.map((p,j)=>`<div class="aians${j===0&&cm==='tabs'?' on':''}" id="a${q.id}${p}"><p>${(q.ans[p]||'').replace(/\n/g,'<br>')}</p><div class="act-row"><button class="acbtn" onclick="if(sendPrompt)sendPrompt('Elaborate: ${q.sit.replace(/'/g,"\\'")}')">Elaborate</button><button class="acbtn" onclick="if(sendPrompt)sendPrompt('Simplify: ${q.sit.replace(/'/g,"\\'")}')">Simplify</button></div></div>`).join('')+`<div class="aians" id="a${q.id}con"><p>${q.consensus}</p></div>`;
+    const cmpH=plats.map(p=>`<div class="cmpc${p===bp?' star':''}"><div class="cmpc-h"><div class="cmpc-d" style="background:${PC[p]||'#888'}"></div><span class="cmpc-n">${PN[p]||p}</span>${p===bp?'<span class="cmpc-s">Best here</span>':''}</div><div class="cmpc-t">${(q.ans[p]||'').replace(/<[^>]*>/g,'').substring(0,130)}…</div></div>`).join('');
+    const innerH=cm==='tabs'?`<div class="aitabs">${tabsH}</div><div class="aibox">${ansH}</div>`:`<div class="cmpgrid">${cmpH}</div><div class="conbox"><div class="con-t">All AI platforms agree</div><div class="con-tx">${q.consensus}</div></div>`;
+
+    const card=document.createElement('div');
+    card.className='dc'+(isOpen?' open':'');
+    card.id='qc'+q.id;
+    card.style.animationDelay=(i*.04)+'s';
+    card.innerHTML=`
+      <div class="dc-accent" style="background:${cc}"></div>
+      <div class="dc-top">
+        <div class="dc-badges">
+          <span class="cat-p" style="background:${cc}18;color:${cc}">${cap(q.cat)}</span>
+          <span class="agr-p" style="color:${agreeC}"><span class="agr-d" style="background:${agreeC}"></span>${q.agree}% agree</span>
+          ${q.hot?'<span class="hot-p">Trending</span>':''}
+        </div>
+        <button class="svbtn${isSaved?' saved':''}" onclick="toggleSave(${q.id},this)">${isSaved?'★':'☆'}</button>
+      </div>
+      <div class="d-sit">${q.sit}</div>
+      <div class="d-decbox">
+        <div class="dd-lbl" style="color:${cc}">The decision</div>
+        <div class="dd-txt">${q.dec}</div>
+      </div>
+      <div class="d-s1" onclick="togS1(this)">
+        <div class="d-s1b"></div><div class="d-s1t">${s1}</div>
+      </div>
+      ${q.why?`<div class="d-why"><span>💡</span>${q.why}</div>`:''}
+      <div class="d-foot">
+        <button class="d-xbtn" onclick="togX(${q.id})">${moreS.length?moreS.length+' more steps &amp; AI views':'See AI views'} <span class="d-chev">▾</span></button>
+        <div style="display:flex;gap:5px">${q.tid?`<button class="d-gbtn" onclick="openTopic('${q.tid}')">Full guide →</button>`:''}</div>
+      </div>
+      <div class="d-exp">
+        ${moreS.length?`<div class="d-msteps">${moreS.map(s=>`<div class="d-ms" onclick="togMS(this)"><div class="d-msb"></div><div class="d-mst">${s}</div></div>`).join('')}</div>`:''}
+        <div class="ai-wrap">
+          <div class="ai-bar">
+            <div class="ai-bl"><span class="ai-lbl">Compare AI views:</span>
+              <div class="vbtns"><button class="vbtn${cm==='tabs'?' on':''}" onclick="setCmp(${q.id},'tabs',this)">Tabs</button><button class="vbtn${cm==='grid'?' on':''}" onclick="setCmp(${q.id},'grid',this)">Side by side</button></div>
+            </div>
+            <span class="best-lbl">Best: ${PN[bp]||bp}</span>
+          </div>
+          <div id="aw-${q.id}">${innerH}</div>
+        </div>
+      </div>`;
+    list.appendChild(card);
+  });
+  renderPager(total,totalPages);renderSidebar(filtered,null);updateSaveBadge();
+}
+
+function togX(id){
+  openId=openId===id?null:id;
+  const card=document.getElementById('qc'+id);if(!card)return;
+  card.classList.toggle('open',openId===id);
+  const chev=card.querySelector('.d-chev');if(chev)chev.style.transform=openId===id?'rotate(180deg)':'';
+  if(openId===id){
+    setTimeout(()=>{card.scrollIntoView({behavior:'smooth',block:'nearest'});},80);
+    
+    const q=liveDB.find(x=>x.id===id)||DB.find(x=>x.id===id);
+    if(q){
+      const filtered=getFiltered();
+      renderSidebar(filtered,q);
+      
+      fetchRelated(q).then(related=>{
+        if(!related||!related.length)return;
+        const also=document.getElementById('alsoSearched');
+        if(!also)return;
+        also.innerHTML=related.map(r=>{
+          const words=r.sit.toLowerCase().split(' ').slice(0,3).join(' ');
+          const match=liveDB.find(d=>d.sit&&d.sit.toLowerCase().includes(words));
+          const click=match?'onclick="goToCard('+match.id+')"':'';
+          const style=match?'':'cursor:default;opacity:.75';
+          return '<div class="also-row" '+click+' style="'+style+'"><span class="also-arr">→</span><div class="also-t">'+r.sit+'</div></div>';
+        }).join('');
+      }).catch(()=>{});
+    }
+  }
+}
+function togS1(row){row.querySelector('.d-s1b').classList.toggle('dn');row.querySelector('.d-s1t').classList.toggle('dn');}
+function togMS(row){row.querySelector('.d-msb').classList.toggle('dn');row.querySelector('.d-mst').classList.toggle('dn');}
+function togCard(btn){btn.closest('.dc').classList.toggle('open');}
+function sTab(qid,p,el){el.parentElement.querySelectorAll('.aitab').forEach(t=>t.classList.remove('on'));el.classList.add('on');el.closest('.ai-wrap').querySelectorAll('.aians').forEach(a=>a.classList.remove('on'));const t=document.getElementById('a'+qid+p);if(t)t.classList.add('on');}
+function setCmp(qid,m,el){
+  cmpModes[qid]=m;el.parentElement.querySelectorAll('.vbtn').forEach(b=>b.classList.remove('on'));el.classList.add('on');
+  const q=liveDB.find(x=>x.id===qid)||DB.find(x=>x.id===qid);if(!q)return;
+  const plats=q.p||Object.keys(q.ans).slice(0,3);const bp=BEST[q.cat]||'claude';
+  const wrap=document.getElementById('aw-'+qid);if(!wrap)return;
+  if(m==='tabs'){
+    const t=plats.map((p,j)=>`<button class="aitab${j===0?' on':''}" onclick="sTab(${q.id},'${p}',this)">${PN[p]||p}</button>`).join('')+`<button class="aitab" onclick="sTab(${q.id},'con',this)">Consensus</button>`;
+    const a=plats.map((p,j)=>`<div class="aians${j===0?' on':''}" id="a${q.id}${p}"><p>${(q.ans[p]||'').replace(/\n/g,'<br>')}</p></div>`).join('')+`<div class="aians" id="a${q.id}con"><p>${q.consensus}</p></div>`;
+    wrap.innerHTML=`<div class="aitabs">${t}</div><div class="aibox">${a}</div>`;
+  } else {
+    const c=plats.map(p=>`<div class="cmpc${p===bp?' star':''}"><div class="cmpc-h"><div class="cmpc-d" style="background:${PC[p]||'#888'}"></div><span class="cmpc-n">${PN[p]||p}</span>${p===bp?'<span class="cmpc-s">Best here</span>':''}</div><div class="cmpc-t">${(q.ans[p]||'').replace(/<[^>]*>/g,'').substring(0,130)}…</div></div>`).join('');
+    wrap.innerHTML=`<div class="cmpgrid">${c}</div><div class="conbox"><div class="con-t">All AI platforms agree</div><div class="con-tx">${q.consensus}</div></div>`;
+  }
+}
+
+function renderPager(total,totalPages){
+  const pg=document.getElementById('pager');if(!pg)return;
+  if(total===0||totalPages<=1){pg.innerHTML='';return;}
+  let h=`<button class="pgb pga" onclick="goPage(${curPage-1})" ${curPage===1?'disabled':''}>← Prev</button>`;
+  for(let i=1;i<=totalPages;i++){
+    if(totalPages>7&&i>2&&i<totalPages-1&&Math.abs(i-curPage)>1){if(i===3||i===totalPages-2)h+=`<span style="color:var(--t3);padding:0 3px">…</span>`;continue;}
+    h+=`<button class="pgb${i===curPage?' on':''}" onclick="goPage(${i})">${i}</button>`;
+  }
+  h+=`<button class="pgb pga" onclick="goPage(${curPage+1})" ${curPage===totalPages?'disabled':''}>Next →</button>`;
+  pg.innerHTML=h;
+}
+function goPage(n){const f=getFiltered();const t=Math.max(1,Math.ceil(f.length/PER));if(n<1||n>t)return;curPage=n;openId=null;render();document.getElementById('qList').scrollIntoView({behavior:'smooth',block:'start'});}
+
+function getRelated(sourceQ, count){
+  const pool = ((liveDB && liveDB.length) ? liveDB : DB).filter(q=>q&&q.sit);
+  if(!sourceQ) return pool.filter(q=>q&&q.hot).sort(()=>Math.random()-.5).slice(0,count);
+  const srcWords=(sourceQ.sit||'').toLowerCase().split(/\W+/).filter(w=>w.length>3);
+  const scored=pool.filter(q=>q.id!==sourceQ.id).map(q=>{
+    const txt=((q.sit||'')+' '+(q.dec||'')).toLowerCase();
+    const overlap=srcWords.filter(w=>txt.includes(w)).length;
+    const catBonus=q.cat===sourceQ.cat?2:0;
+    const hotBonus=q.hot?1:0;
+    return {q, score:overlap+catBonus+hotBonus};
+  }).sort((a,b)=>b.score-a.score);
+  return scored.slice(0,count).map(s=>s.q);
+}
+
+function renderSidebar(filtered, sourceQ){
+  
+  const pool = ((liveDB && liveDB.length) ? liveDB : DB).filter(q=>q&&q.sit&&q.id);
+
+  
+  const hotPool = pool.filter(q=>q&&q.hot);
+  
+  const hot = hotPool.sort(()=>Math.random()-.5).slice(0,5);
+  const el=document.getElementById('sideHot');
+  if(el){
+    el.innerHTML = hot.length
+      ? hot.map((q,i)=>`<div class="tr-row" onclick="goToCard(${q.id})"><div class="tr-n">${i+1}</div><div><div class="tr-t">${q.sit}</div><div class="tr-c">${cap(q.cat)}</div></div></div>`).join('')
+      : '<div style="font-size:11px;color:var(--t3);padding:4px 0">Refreshing...</div>';
+  }
+
+  
+  const also=document.getElementById('alsoSearched');
+  if(also){
+    const hotIds = new Set(hot.map(q=>q.id));
+    let toShow;
+    if(sourceQ){
+      
+      toShow = getRelated(sourceQ, 5);
+    } else {
+      
+      toShow = pool
+        .filter(q=>!hotIds.has(q.id))
+        .sort(()=>Math.random()-.5)
+        .slice(0,5);
+    }
+    also.innerHTML = toShow.length
+      ? toShow.map(q=>`<div class="also-row" onclick="goToCard(${q.id})"><span class="also-arr">→</span><div class="also-t">${q.sit}</div></div>`).join('')
+      : '<div style="font-size:11px;color:var(--t3);padding:4px 0">Refreshing...</div>';
+  }
+}
+
+function goToCard(id){
+  
+  const fp=document.getElementById('feedPanel');
+  const sp=document.getElementById('studyPanel');
+  const ft=document.getElementById('feedTitle');
+  if(sp&&sp.style.display==='block'){
+    fp.style.display='block';sp.style.display='none';
+    if(ft)ft.style.display='';
+    catF='all';
+    document.querySelectorAll('#catRow .chip').forEach(c=>c.classList.remove('on'));
+    document.querySelector('#catRow .chip').classList.add('on');
+    render();
+  }
+  
+  const filtered=getFiltered();
+  const idx=filtered.findIndex(q=>q.id===id);
+  if(idx>=0){
+    const newPage=Math.floor(idx/PER)+1;
+    if(newPage!==curPage){curPage=newPage;render();}
+  }
+  setTimeout(()=>togX(id),80);
+}
+
+
+function toggleSave(id,btn){if(savedIds.has(id)){savedIds.delete(id);btn.textContent='☆';btn.classList.remove('saved');}else{savedIds.add(id);btn.textContent='★';btn.classList.add('saved');}saveSaved();updateSaveBadge();if(curTab==='saved')renderSaved();}
+function updateSaveBadge(){const b=document.getElementById('sb-badge');if(!b)return;if(savedIds.size>0){b.textContent=savedIds.size;b.style.display='inline';}else{b.style.display='none';}}
+function renderSaved(){
+  const panel=document.getElementById('savedPanel');if(!panel)return;
+  const saved=DB.filter(q=>savedIds.has(q.id));
+  if(saved.length===0){panel.innerHTML='<div class="sv-empty">No saved decisions yet.<br>Tap ☆ on any card to save it here.</div>';return;}
+  let html=`<div class="svp-hd"><h2>Saved decisions (${saved.length})</h2><button class="clrb" onclick="clearSaved()">Clear all</button></div>`;
+  saved.forEach(q=>{const cc=CCOLOR[q.cat]||'var(--ac)';html+=`<div class="dc" style="margin-bottom:8px"><div class="dc-accent" style="background:${cc}"></div><div class="dc-top"><span class="cat-p" style="background:${cc}18;color:${cc}">${cap(q.cat)}</span><button class="svbtn saved" onclick="unsaveQ(${q.id},this)">★</button></div><div class="d-sit" style="cursor:pointer" onclick="goToQ(${q.id})">${q.sit}</div><div class="d-decbox"><div class="dd-lbl" style="color:${cc}">The decision</div><div class="dd-txt">${q.dec}</div></div>${q.tid?`<div style="padding:.3rem 1rem .65rem"><button class="d-gbtn" onclick="openTopic('${q.tid}')">Full guide →</button></div>`:''}</div>`;});
+  panel.innerHTML=html;
+}
+function goToQ(id){switchTab('feed',document.getElementById('tab-feed'));catF='all';document.querySelectorAll('#catRow .chip').forEach(c=>c.classList.remove('on'));document.querySelector('#catRow .chip').classList.add('on');setTimeout(()=>{togX(id);},100);}
+function unsaveQ(id){savedIds.delete(id);saveSaved();updateSaveBadge();renderSaved();}
+function clearSaved(){savedIds.clear();saveSaved();updateSaveBadge();renderSaved();}
+function switchTab(tab,el){
+  curTab=tab;document.querySelectorAll('.nt').forEach(b=>b.classList.remove('on'));el.classList.add('on');
+  const feed=document.getElementById('feedPanel');const saved=document.getElementById('savedPanel');
+  if(tab==='feed'){feed.style.display='block';saved.classList.remove('v');}
+  else{feed.style.display='none';saved.classList.add('v');renderSaved();}
+}
+
+
+function fCat(category, el) {
+  currentCategory = category;
+  catF = category === 'study' ? 'all' : category;
+  curPage = 1; openId = null;
+
+  document.querySelectorAll('#catRow .chip').forEach(c => c.classList.remove('on'));
+  el.classList.add('on');
+
+  const fp = document.getElementById('feedPanel');
+  const sp = document.getElementById('studyPanel');
+  const ft = document.getElementById('feedTitle');
+
+  if (category === 'study') {
+    if (fp) fp.style.display = 'none';
+    if (sp) sp.style.display = 'block';
+    if (ft) ft.style.display = 'none';
+    
+    renderFlashcards('all');
+  } else {
+    if (fp) fp.style.display = 'block';
+    if (sp) sp.style.display = 'none';
+    if (ft) ft.style.display = '';
+    loadLiveQuestions(category);
+  }
+}
+function clearFilters(){
+  catF='all';searchTerm='';
+  document.querySelectorAll('#catRow .chip').forEach(c=>c.classList.remove('on'));
+  document.querySelector('#catRow .chip').classList.add('on');
+  const fp=document.getElementById('feedPanel');const sp=document.getElementById('studyPanel');
+  const ft=document.getElementById('feedTitle');
+  if(fp)fp.style.display='block';if(sp)sp.style.display='none';if(ft)ft.style.display='';
+  render();
+}
+function cap(s){return s?s.charAt(0).toUpperCase()+s.slice(1):'';}
+
+
+const SESSION={};
+let searchTimer=null;
+function onSearch(val){searchTerm=val.trim();curPage=1;render();}
+
+function clearSearch(){searchTerm='';curPage=1;render();}
+
+
+function doRefresh(btn) {
+  btn.classList.add("sp");
+  nextQ();
+  
+  Object.keys(SESSION_CACHE).forEach(k => {
+    if (k.startsWith('decisions_') || k.startsWith('study_')) delete SESSION_CACHE[k];
+  });
+  const isStudy = document.getElementById('studyPanel')?.style.display === 'block';
+  const cat = currentCategory || catF || 'all';
+  
+  renderSidebar([], null);
+  if (isStudy) {
+    loadLiveStudy('all').finally(() => {
+      renderSidebar([], null);
+      btn.classList.remove("sp");
+    });
+  } else {
+    loadLiveQuestions(cat).finally(() => {
+      renderSidebar(getFiltered(), null);
+      btn.classList.remove("sp");
+    });
+  }
+}
+function goHome(){showPage('pg-home');window.scrollTo({top:0,behavior:'smooth'});}
+function showPage(id){document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));document.getElementById(id).classList.add('active');}
+function captureEmail(){const e=document.getElementById('ecEmail');if(!e.value||!e.value.includes('@'))return;document.getElementById('ecOk').style.display='block';e.value='';}
+
+
+const TOPICS={
+  layoff:{title:"Surviving a layoff — the complete playbook",cat:"Career",cBg:"rgba(232,112,58,.1)",cTx:"#e8703a",feel:"You just got the news, or you feel it coming. Here is what to do — fast, clear, and in order.",
+    vids:[{t:"What to do in the first 48 hours after a layoff",by:"Andrew LaCivita",d:"11 min",p:70,url:"https:
+    ck:[{t:"Get termination letter in writing",tag:"today"},{t:"Do NOT sign severance same day — 21 days to review",tag:"urgent"},{t:"File for unemployment — clock starts from last day",tag:"today"},{t:"Continue health insurance via COBRA or Marketplace (60-day window)",tag:"urgent"},{t:"Calculate runway: savings ÷ monthly expenses = months",tag:""},{t:"Save all work contacts before email access is revoked",tag:"today"},{t:"Update LinkedIn with most recent wins",tag:""},{t:"List every professional contact from the last 5 years",tag:""},{t:"Message 5 people: 'I'm exploring new opportunities'",tag:""},{t:"Set daily routine: 2 applications + 3 personal messages",tag:""}],
+    mn:["Do not sign severance the day you're let go. A $200 attorney review often adds $5,000–$15,000 to the offer.","Your network is 10× more powerful than job boards. One warm introduction beats 50 cold applications.","Week 1–2 feel like free-fall. Week 3 is dramatically better for most people. Make no permanent decisions in week one.","Being laid off is not a verdict on your ability. Companies lay off excellent people for structural reasons constantly."],
+    st:[{n:"3–5 mo",d:"Average professional job search in 2025",c:"#e8703a"},{n:"70%",d:"Of roles filled through relationships",c:"#e8703a"},{n:"21 days",d:"Legal window to review most severance agreements",c:"#e8703a"}],
+    sit:[{l:"I just got laid off today",r:"Don't sign anything. File for unemployment tonight. Calculate your runway. Call one trusted person. Tomorrow: start the contact list."},{l:"Worried a layoff is coming in the next few months",r:"Update resume and LinkedIn this weekend. Request 2–3 recommendations now while relationships are warm."},{l:"It happened last week and I'm lost",r:"Set a daily routine today: 9–11am applications, 11–12 personal outreach (3 messages), afternoon skill building."}],
+    ai:{chatgpt:{t:"ChatGPT",best:false,text:"Calculate your financial runway before anything else. Knowing you have 5–6 months changes your emotional state and negotiating posture entirely."},claude:{t:"Claude",best:true,text:"The job search is 20% applications, 80% relationship reactivation. Warm referrals convert at 5–10× cold applications. Coffee chats beat job boards."},perplexity:{t:"Perplexity",best:false,text:"Average time from first interview to offer in 2025: ~44 days. Plan for a 3–5 month search. Candidates who accept bad offers out of panic almost always lacked financial buffer."}}},
+  h1b:{title:"H-1B layoff — your 60-day action plan",cat:"Immigration",cBg:"rgba(79,126,247,.1)",cTx:"#4f7ef7",feel:"You just got laid off on H-1B. You have 60 days. Here is exactly what to do — specific steps with legal context.",
+    vids:[{t:"H-1B layoff: what to do in the first week",by:"Tandon Law",d:"12 min",p:80,url:"https:
+    ck:[{t:"Confirm exact last day of employment in writing from HR",tag:"today"},{t:"Book immigration attorney consultation within first week — many offer free 30-min calls",tag:"urgent"},{t:"Apply immediately to cap-exempt employers (universities, nonprofits, research institutions)",tag:"urgent"},{t:"Evaluate status change options: F-1, H-4, or B-1/B-2",tag:"urgent"},{t:"Do not accept any freelance or consulting work — unauthorized employment",tag:"urgent"},{t:"Track your 60-day clock — set hard deadline at day 50",tag:"today"},{t:"Gather documents: W-2s, pay stubs, employment verification letters",tag:""},{t:"If changing status: file change of status application before day 60",tag:"urgent"},{t:"Research O-1 visa eligibility if you have publications, patents, or exceptional achievements",tag:""}],
+    mn:["The 60-day clock started on your last day. No extensions, no appeals. Treat day 50 as your real deadline.","Cap-exempt employers can hire you at any time of year — no lottery, no cap. Universities, large hospital systems, government research orgs. Your fastest path.","H-1B portability: a new employer can file your transfer and you can begin working when they FILE — not when USCIS approves. Push for premium processing.","An immigration attorney is not optional here. A $500 consultation can save your status and potentially years of your life."],
+    st:[{n:"60 days",d:"Grace period from last day of H-1B employment",c:"#4f7ef7"},{n:"15 days",d:"USCIS premium processing time for H-1B transfer",c:"#4f7ef7"},{n:"Year-round",d:"Cap-exempt employers can file H-1B anytime",c:"#4f7ef7"}],
+    sit:[{l:"I just got laid off today — first steps",r:"Get last day confirmed in writing. Do not work today even if asked. Book an immigration attorney this week. Apply to cap-exempt employers immediately. Set your 60-day deadline in your calendar."},{l:"I've been unemployed 30+ days and didn't know about the 60-day rule",r:"Consult an immigration attorney immediately — you may have options including voluntary departure or change of status. Every day matters now."},{l:"I have a potential new job but they need time to file",r:"Push for premium processing ($2,805, 15 business days). Ask if they are cap-exempt. Ensure H-1B transfer is filed before day 60."}],
+    ai:{chatgpt:{t:"ChatGPT",best:false,text:"During the 60-day grace period you cannot work, but you can transfer to a new H-1B sponsor or change status. Apply to cap-exempt employers first — they can file immediately without lottery wait."},claude:{t:"Claude",best:true,text:"H-1B portability under AC21: you can begin working for a new employer as soon as they FILE the transfer petition — not when USCIS approves it. This requires prior H-1B approval and 180+ days in H-1B status. Most people don't know this."},perplexity:{t:"Perplexity",best:false,text:"Cap-exempt employers include all universities, most large hospital systems affiliated with universities, nonprofit research organizations, and government research institutions. Many are actively hiring and can file immediately."}}},
+  interview:{title:"Interview prep 2025 — what actually gets you the offer",cat:"Career",cBg:"rgba(232,112,58,.1)",cTx:"#e8703a",feel:"You have an interview coming. Here is what moves the needle.",
+    vids:[{t:"The STAR method done right — real examples",by:"Self Made Millennial",d:"14 min",p:85,url:"https:
+    ck:[{t:"Research the company: news, product launches, earnings",tag:""},{t:"Read job description 3× — underline every key skill",tag:""},{t:"Prepare 8 STAR stories: leadership, conflict, failure, innovation",tag:"urgent"},{t:"Look up interviewer on LinkedIn",tag:""},{t:"Practice 'tell me about yourself' out loud — 2 min max",tag:""},{t:"Research company interview format and culture values",tag:"urgent"},{t:"Prepare 5 thoughtful questions to ask them",tag:""},{t:"Send thank-you email within 2 hours",tag:"today"}],
+    mn:["Interviewers remember how you made them feel. Your job is to make them feel smart for considering you.","For tech companies: know their culture values cold. Amazon LPs, Google Googleyness, Meta impact values — every round scores these.","Ask: 'What does success look like in the first 90 days?' It signals you're already thinking as an employee.","Thank-you email within 2 hours. Most candidates don't. It costs you nothing."],
+    st:[{n:"8 stories",d:"Prep these to cover 90% of behavioral questions",c:"#e8703a"},{n:"2 hrs",d:"Window to send thank-you for maximum impact",c:"#e8703a"},{n:"70%",d:"Of decisions made within the first 5 minutes",c:"#e8703a"}],
+    sit:[{l:"Interview at Google, Meta, or Amazon",r:"Know their culture values cold. LeetCode Medium is the floor for coding rounds. For senior roles: system design at production scale."},{l:"Behavioral interview at consulting firm",r:"15–20 cases on Preplounge.com. Fit stories need structure and quantified impact. Practice thinking out loud."},{l:"I keep getting interviews but not offers",r:"Record a mock interview and watch it back. Most people discover filler words, poor camera eye contact, or answers that run too long."}],
+    ai:{chatgpt:{t:"ChatGPT",best:false,text:"Your greatest accomplishment story is the highest-leverage prep activity. Specific challenge, your specific actions, specific measurable result."},claude:{t:"Claude",best:true,text:"Tell me about yourself: one sentence background, one big recent win, one sentence on why this specific role at this company. Practice until natural, not rehearsed."},perplexity:{t:"Perplexity",best:false,text:"Most initial screens are ATS-powered. Use exact keywords from the job description. AI screening systems match literally — pass the bot to reach the human."}}},
+  salary:{title:"Salary negotiation — the complete script",cat:"Career",cBg:"rgba(232,112,58,.1)",cTx:"#e8703a",feel:"You got an offer or you want a raise. Here is exactly what to say and when.",
+    vids:[{t:"Salary negotiation: how to counter a job offer",by:"Haseeb Qureshi",d:"13 min",p:75,url:"https:
+    ck:[{t:"Research market rate: Glassdoor, Levels.fyi, LinkedIn Salary — 3+ data points",tag:"urgent"},{t:"Know your target AND walk-away number before any conversation",tag:""},{t:"Never give a number first — 'I'm flexible, what's the range?'",tag:""},{t:"If pushed: give a range where your target is the bottom",tag:""},{t:"Always negotiate — 87% of hiring managers expect it",tag:"urgent"},{t:"Negotiate full package: base, equity, signing bonus, PTO, title, remote",tag:""},{t:"Make your counter then go silent",tag:""},{t:"Get final offer in writing before resigning",tag:"urgent"}],
+    mn:["The script: 'I'm excited. Based on my research, I was hoping we could get to [X]. Is there flexibility?' Then stop talking.","Justify with market data, not personal needs. 'The market rate for this role is X' is powerful.","If base is locked, ask about signing bonus or equity — often entirely separate budget lines.","Failing to negotiate one offer costs the average professional $500,000+ over a career."],
+    st:[{n:"87%",d:"Of hiring managers expect negotiation",c:"#e8703a"},{n:"13%",d:"Average increase when negotiating",c:"#e8703a"},{n:"$500K+",d:"Career cost of never negotiating",c:"#e8703a"}],
+    sit:[{l:"I just got a job offer",r:"Email tonight: 'Thank you — I'm excited. Based on my research, I was hoping we could get to [X]. Is there flexibility?' Then wait."},{l:"I want a raise at my current job",r:"Build your brag document — every win and metric from the last 12 months. Schedule a 1:1 as 'I'd love to discuss my role and growth.' Don't mention 'raise' in the invitation."},{l:"They said budget is locked",r:"Ask about total package: 'Is there flexibility on the signing bonus, equity, or vacation?' Budget locks usually apply to only one line item."}],
+    ai:{chatgpt:{t:"ChatGPT",best:false,text:"Make the counter and stop talking. Many people fill the silence by negotiating against themselves before the employer has even responded."},claude:{t:"Claude",best:true,text:"Give a range where your target is the bottom. If you want $120K, say '$120–130K based on my research.' The employer anchors to the lower number, you get your target."},perplexity:{t:"Perplexity",best:false,text:"85% of people who negotiated got some increase. Average was 13% above initial offer. Employers almost never rescind offers over a courteous counter."}}}
+};
+
+function openTopic(id){
+  const t=TOPICS[id];if(!t)return;
+  const vids=t.vids.map(v=>`<a class="vcard" href="${v.url}" target="_blank" rel="noopener noreferrer"><div class="vthumb"><div class="vbar" style="width:${v.p}%"></div><div class="ytag">YouTube</div></div><div class="vtitle">${v.t}</div><div class="vmeta">${v.d} · ${v.by}</div></a>`).join('');
+  const ck=t.ck.map(c=>`<div class="ckrow" onclick="tCk(this)"><div class="ckbox"></div><div class="cktx">${c.t}${c.tag==='urgent'?'<span class="cku">Urgent</span>':c.tag==='today'?'<span class="ckt">Today</span>':''}</div></div>`).join('');
+  const mn=t.mn.map(m=>`<div class="mquo"><p>${m}</p></div>`).join('');
+  const sts=t.st.map(s=>`<div class="stcard"><div class="stnum" style="color:${s.c}">${s.n}</div><div class="stdesc">${s.d}</div></div>`).join('');
+  const sits=t.sit.map((s,i)=>`<button class="sitopt" onclick="pSit(${i},'${id}',this)">${s.l}</button>`).join('');
+  const sres=t.sit.map((s,i)=>`<div class="sitres" id="sr${id}${i}">${s.r}</div>`).join('');
+  const aiKeys=Object.keys(t.ai);
+  const aiTabs=aiKeys.map((p,j)=>`<button class="aitab${j===0?' on':''}" onclick="sTT('${id}','${p}',this)">${t.ai[p].t}${t.ai[p].best?' ★':''}</button>`).join('');
+  const aiDivs=aiKeys.map((p,j)=>`<div class="aians${j===0?' on':''}" id="ta${id}${p}"><p>${t.ai[p].text}</p></div>`).join('');
+  document.getElementById('topic-content').innerHTML=`
+    <div class="t-hero"><div style="max-width:780px;margin:0 auto;padding:0 1.8rem"><button class="tback" onclick="goHome()">← Back to decisions</button><div class="tbread">NowStep · ${t.cat}</div><span class="tcat-tag" style="background:${t.cBg};color:${t.cTx}">${t.cat}</span><div class="t-h1">${t.title}</div><div class="t-feel">"${t.feel}"</div></div></div>
+    <div class="t-wrap">
+      <div class="tsec"><div class="tsh"><div class="tsn">1</div><span class="tst">Watch first — opens in YouTube</span></div><div class="tsb"><div class="vgrid">${vids}</div></div></div>
+      <div class="tsec"><div class="tsh"><div class="tsn">2</div><span class="tst">Exact checklist — tap each to check off</span></div><div class="tsb"><div class="cklist">${ck}</div></div></div>
+      <div class="tsec"><div class="tsh"><div class="tsn">3</div><span class="tst">What a mentor would tell you</span></div><div class="tsb"><div class="mlist">${mn}</div></div></div>
+      <div class="tsec"><div class="tsh"><div class="tsn">4</div><span class="tst">Key numbers</span></div><div class="tsb"><div class="stgrid">${sts}</div></div></div>
+      <div class="tsec">
+        <div class="tsh"><div class="tsn">5</div><span class="tst">Compare AI perspectives</span></div>
+        <div class="tsb">
+          <div class="ai-bar" style="margin:-12px -14px 10px;padding:6px 14px"><div class="ai-bl"><span class="ai-lbl">View:</span><div class="vbtns"><button class="vbtn on" onclick="setTV('tabs','${id}',this)">Tabs</button><button class="vbtn" onclick="setTV('grid','${id}',this)">Side by side</button></div></div><span class="best-lbl">Recommended: ${Object.values(t.ai).find(a=>a.best)?.t||'Claude'}</span></div>
+          <div id="tav-${id}"><div class="aitabs">${aiTabs}</div>${aiDivs}</div>
+        </div>
+      </div>
+      <div class="tsec"><div class="tsh"><div class="tsn">6</div><span class="tst">Your next step — pick your situation</span></div><div class="tsb"><div class="sitopts">${sits}</div>${sres}</div></div>
+    </div>`;
+  showPage('pg-topic');window.scrollTo({top:0,behavior:'smooth'});
+}
+function setTV(m,tid,el){
+  el.parentElement.querySelectorAll('.vbtn').forEach(b=>b.classList.remove('on'));el.classList.add('on');
+  const t=TOPICS[tid];if(!t)return;const wrap=document.getElementById('tav-'+tid);if(!wrap)return;
+  const aiKeys=Object.keys(t.ai);
+  if(m==='tabs'){const tabs=aiKeys.map((p,j)=>`<button class="aitab${j===0?' on':''}" onclick="sTT('${tid}','${p}',this)">${t.ai[p].t}${t.ai[p].best?' ★':''}</button>`).join('');const divs=aiKeys.map((p,j)=>`<div class="aians${j===0?' on':''}" id="ta${tid}${p}"><p>${t.ai[p].text}</p></div>`).join('');wrap.innerHTML=`<div class="aitabs">${tabs}</div>${divs}`;}
+  else{const cmp=aiKeys.map(p=>`<div class="taicard${t.ai[p].best?' best':''}"><div class="taih"><div class="taid" style="background:${PC[p]||'#888'}"></div><span class="taipn">${t.ai[p].t}</span>${t.ai[p].best?'<span class="taistar">Recommended</span>':''}</div><div class="taitxt">${t.ai[p].text}</div></div>`).join('');wrap.innerHTML=`<div class="taicomp">${cmp}</div>`;}
+}
+function tCk(row){row.querySelector('.ckbox').classList.toggle('dn');row.querySelector('.cktx').classList.toggle('dn');}
+function pSit(i,tid,el){document.querySelectorAll('.sitopt').forEach(o=>o.classList.remove('pk'));document.querySelectorAll('.sitres').forEach(r=>r.classList.remove('sh'));el.classList.add('pk');const r=document.getElementById('sr'+tid+i);if(r)r.classList.add('sh');}
+function sTT(tid,p,el){el.parentElement.querySelectorAll('.aitab').forEach(t=>t.classList.remove('on'));el.classList.add('on');const wrap=document.getElementById('tav-'+tid);if(wrap)wrap.querySelectorAll('.aians').forEach(a=>a.classList.remove('on'));const t=document.getElementById('ta'+tid+p);if(t)t.classList.add('on');}
+
+
+
+const FC_COLORS={
+  tech:{c:'#0891b2',bg:'rgba(8,145,178,.1)'},
+  product:{c:'#7c3aed',bg:'rgba(124,58,237,.1)'},
+  finance:{c:'#059669',bg:'rgba(5,150,105,.1)'},
+  soft:{c:'#e8703a',bg:'rgba(232,112,58,.1)'},
+  emerging:{c:'#d97706',bg:'rgba(217,119,6,.1)'},
+};
+const DEMAND_N={'High':2,'Very High':3,'Explosive':4};
+
+function renderFlashcards(type){
+  const sp=document.getElementById('studyPanel');if(!sp)return;
+  const data=type==='all'?liveStudy:liveStudy.filter(s=>s.type===type);
+  const tabs=[['all','All'],['tech','Tech & AI'],['product','Product'],['finance','Finance'],['soft','Soft skills'],['emerging','Emerging']];
+  const tabsH=tabs.map(([t,l])=>`<button class="fcf${type===t?' on':''}" onclick="renderFlashcards('${t}')">${l}</button>`).join('');
+  const cardsH=data.map((s,i)=>{
+    const fc=FC_COLORS[s.type]||FC_COLORS.tech;
+    const n=DEMAND_N[s.demand]||2;
+    const dots=Array(4).fill(0).map((_,j)=>`<span class="${j<n?'on':''}"></span>`).join('');
+    const steps=Array.isArray(s.steps)?s.steps:[];const moreSteps=steps.slice(1);
+    return `<div class="fc" style="animation-delay:${i*.04}s;--fcc:${fc.c};--fcbg:${fc.bg}" onclick="fcFlip(this)">
+      <div class="fc-front">
+        <div class="fc-badge">${s.skill}</div>
+        <div class="fc-skill">${s.sit}</div>
+        <div class="fc-dec">${s.dec}</div>
+        <div class="fc-hint">👆 Tap for first step</div>
+      </div>
+      <div class="fc-back">
+        <div class="fc-demand"><span class="fc-dlabel">${s.demand}</span><div class="fc-dots">${dots}</div></div>
+        <div class="fc-step1"><div class="fc-sn">1</div><div class="fc-st">${steps[0]||""}</div></div>
+        ${moreSteps.length?`<button class="fc-more-btn" onclick="event.stopPropagation();fcToggleMore(this)">+ ${moreSteps.length} more steps</button><div class="fc-more-steps">${moreSteps.map((st,si)=>`<div class="fc-xs"><span class="fc-xn">${si+2}</span><span>${st}</span></div>`).join('')}<div class="fc-why">💡 ${s.why}</div></div>`:''}
+        <button class="fc-flip-back" onclick="event.stopPropagation();this.closest('.fc').classList.remove('flipped')">↩ flip back</button>
+      </div>
+    </div>`;
+  }).join('');
+  sp.innerHTML=`<div class="fc-wrap"><div class="fc-subbar"><span class="fc-sub-lbl">Filter:</span>${tabsH}</div><div class="fc-grid">${cardsH || '<p style="color:var(--t3);font-size:13px;padding:.5rem 0">No skills found.</p>'}</div></div>`;
+}
+function fcFlip(c){if(window.getSelection&&window.getSelection().toString())return;c.classList.toggle('flipped');}
+function fcToggleMore(btn){const m=btn.nextElementSibling;m.classList.toggle('open');btn.textContent=m.classList.contains('open')?`− fewer steps`:`+ ${m.querySelectorAll('.fc-xs').length} more steps`;}
+
+async function submitFb(e){
+  e.preventDefault();const ok=document.getElementById('fbOk');
+  try{await fetch('https:
+  ok.style.display='inline';setTimeout(()=>{ok.style.display='none';},4000);
+}
+
+function renderQuestions(items, category) {
+  if (!items || !items.length) return;
+  const cat = category || 'all';
+  const normalized = items.map((q, i) => {
+    const sit = q.sit || q.situation || '';
+    const dec = q.dec || q.decision || '';
+    const steps = Array.isArray(q.steps) ? q.steps : [];
+    const catColor = CCOLOR[cat] || CCOLOR[q.cat] || '#4f7ef7';
+    return {
+      id: q.id || (2000 + i),
+      cat: q.cat || q.category || cat,
+      hot: q.hot != null ? q.hot : i < 3,
+      sit,
+      dec,
+      steps,
+      why: q.why || '',
+      agree: q.agree || Math.floor(78 + Math.random()*17), 
+      p: ['chatgpt','claude','perplexity'],
+      consensus: q.consensus || ('All models agree: ' + dec.split('.')[0] + '.'),
+      ans: q.ans || {
+        chatgpt: '<strong>ChatGPT:</strong> ' + dec + (steps[0] ? ' Start with: ' + steps[0] : ''),
+        claude:  '<strong>Claude:</strong> ' + (q.why || dec),
+        perplexity: '<strong>Perplexity:</strong> ' + (steps[1] || dec)
+      }
+    };
+  }).filter(q => q.sit && q.dec);
+  if (!normalized.length) return;
+  if (cat === 'all') {
+    liveDB = [...normalized, ...DB.filter(q => !normalized.find(n => n.sit === q.sit))].slice(0, 40);
+  } else {
+    liveDB = [...normalized, ...DB.filter(q => q.cat !== cat)];
+  }
+  isLiveData = true;
+  catF = cat === 'all' ? 'all' : cat;
+  initPool();
+  render();
+  renderSidebar(getFiltered(), null);
+  const ft = document.getElementById('feedTitle');
+  if (ft) ft.innerHTML = (cat === 'all' ? "Today's decisions" : cap(cat) + ' decisions') + ' <span style="font-size:10px;color:var(--gr);font-weight:400;margin-left:6px">✦ live</span>';
+}
+
+
+
+
+async function loadLiveQuestions(category) {
+  const cat = category || catF || 'all';
+  currentCategory = cat;
+  catF = cat === 'all' ? 'all' : cat;
+  
+  const savedOpenId = openId;
+  showFeedLoading('Fetching fresh decisions...');
+  try {
+    const items = await fetchDecisions(cat);
+    
+    
+    renderQuestions(items, cat);
+    
+    if (savedOpenId) {
+      openId = savedOpenId;
+      const card = document.getElementById('qc' + savedOpenId);
+      if (card) { card.classList.add('open'); }
+    }
+    renderSidebar(getFiltered(), openId ? liveDB.find(q=>q.id===openId)||null : null);
+    const ft = document.getElementById('feedTitle');
+    if (ft) ft.innerHTML = (cat === 'all' ? "Today's decisions" : cap(cat) + ' decisions')
+      + ' <span style="font-size:10px;color:var(--gr);font-weight:400;margin-left:6px">✦ live</span>';
+  } catch(e) {
+    console.warn('Live fetch failed, using static DB:', e);
+    liveDB = [...DB];
+    initPool();
+    openId = savedOpenId;
+    render();
+    renderSidebar(getFiltered(), null);
+    const ft = document.getElementById('feedTitle');
+    if (ft) ft.innerHTML = (cat === 'all' ? "Today's decisions" : cap(cat) + ' decisions')
+      + ' <span style="font-size:10px;color:var(--t3);font-weight:400;margin-left:6px">(cached)</span>';
+  }
+}
+
+
+
+updateSaveBadge();
+liveDB = [...DB];
+initPool();
+render();
+renderSidebar(getFiltered(), null);
+
+loadLiveQuestions('all');
+</script>
+</body>
+</html>

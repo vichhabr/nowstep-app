@@ -1,0 +1,13 @@
+{
+  "buildCommand": "echo 'Building...'",
+  "outputDirectory": ".",
+  "env": {
+    "OPENAI_API_KEY": "@openai_api_key"
+  },
+  "functions": {
+    "api/ai.js": {
+      "memory": 1024,
+      "maxDuration": 30
+    }
+  }
+}
